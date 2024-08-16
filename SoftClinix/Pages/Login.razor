@@ -1,0 +1,51 @@
+﻿@page "/login"
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+
+<PageTitle>Iniciar Sesión</PageTitle>
+<div class="modal d-block">
+    <div style="width: 35rem; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-center text-white">
+                <h3>Iniciar Sesión</h3>
+            </div>
+            <div class="modal-content">
+                <div class="modal-body">
+                    <label class="fw-bold">Usuario</label>
+                    <input class="form-control" @bind="user" />
+
+                    <label class="fw-bold">Contraseña</label>
+                    <input type="password" class="form-control" @bind="pass" />
+
+                    <div class="row text-danger d-@mensaje">
+                        <label class="fw-bold">Usuario o contraseña Incorrecta</label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="row text-end">
+                    <button class="btn btn-success" @onclick="Acceder">Acceder</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string user = "", pass = "", mensaje = "none";
+    private string usuarioCorrecto = "admin", contrasenaCorrecta = "12345";
+
+    public async Task Acceder()
+    {
+        if (user == usuarioCorrecto && pass == contrasenaCorrecta)
+        {
+            mensaje = "none"; user = ""; pass = "";
+            await JSRuntime.InvokeVoidAsync("localStorage.setItem", "Logueado", "true");
+            NavigationManager.NavigateTo("/", true);
+        }
+        else
+        {
+            mensaje = "block";
+        }
+    }
+}

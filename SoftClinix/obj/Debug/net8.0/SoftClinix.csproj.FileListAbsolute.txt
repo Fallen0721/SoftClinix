@@ -1,0 +1,62 @@
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\bin\Debug\net8.0\appsettings.json
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\bin\Debug\net8.0\SoftClinix.staticwebassets.runtime.json
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\bin\Debug\net8.0\SoftClinix.exe
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\bin\Debug\net8.0\SoftClinix.deps.json
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\bin\Debug\net8.0\SoftClinix.runtimeconfig.json
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\bin\Debug\net8.0\SoftClinix.dll
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\bin\Debug\net8.0\SoftClinix.pdb
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.AssemblyInfo.cs
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.RazorAssemblyInfo.cache
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.RazorAssemblyInfo.cs
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\staticwebassets\msbuild.SoftClinix.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\staticwebassets\msbuild.build.SoftClinix.props
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SoftClinix.props
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SoftClinix.props
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\scopedcss\Layout\NavMenu.razor.rz.scp.css
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\scopedcss\MainLayout.razor.rz.scp.css
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\scopedcss\bundle\SoftClinix.styles.css
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\scopedcss\projectbundle\SoftClinix.bundle.scp.css
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.dll
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\refint\SoftClinix.dll
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.pdb
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.genruntimeconfig.cache
+C:\Users\DELL\source\repos\SoftClinix\SoftClinix\obj\Debug\net8.0\ref\SoftClinix.dll
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\bin\Debug\net8.0\appsettings.json
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\bin\Debug\net8.0\SoftClinix.staticwebassets.runtime.json
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\bin\Debug\net8.0\SoftClinix.exe
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\bin\Debug\net8.0\SoftClinix.deps.json
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\bin\Debug\net8.0\SoftClinix.runtimeconfig.json
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\bin\Debug\net8.0\SoftClinix.dll
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\bin\Debug\net8.0\SoftClinix.pdb
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.AssemblyInfoInputs.cache
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.AssemblyInfo.cs
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.csproj.CoreCompileInputs.cache
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.RazorAssemblyInfo.cache
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.RazorAssemblyInfo.cs
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\staticwebassets\msbuild.SoftClinix.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\staticwebassets\msbuild.build.SoftClinix.props
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SoftClinix.props
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SoftClinix.props
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\scopedcss\Layout\NavMenu.razor.rz.scp.css
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\scopedcss\MainLayout.razor.rz.scp.css
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\scopedcss\bundle\SoftClinix.styles.css
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\scopedcss\projectbundle\SoftClinix.bundle.scp.css
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.dll
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\refint\SoftClinix.dll
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.pdb
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.genruntimeconfig.cache
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\ref\SoftClinix.dll

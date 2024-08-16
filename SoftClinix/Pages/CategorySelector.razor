@@ -1,0 +1,35 @@
+﻿@page "/category-selector"
+@using SoftClinix.Models
+
+@code {
+    private List<Category> categories;
+    private int selectedCategoryId;
+
+    protected override void OnInitialized()
+    {
+        categories = new List<Category>
+        {
+            new Category { Id = 1, Name = "A+" },
+            new Category { Id = 2, Name = "A-" },
+            new Category { Id = 3, Name = "B+" },
+            new Category { Id = 4, Name = "B-" },
+            new Category { Id = 5, Name = "AB+" },
+            new Category { Id = 6, Name = "AB-" },
+            new Category { Id = 7, Name = "O+" },
+            new Category { Id = 8, Name = "O-" },
+        };
+    }
+
+    private void OnCategoryChanged(ChangeEventArgs e)
+    {
+        selectedCategoryId = int.Parse(e.Value.ToString());
+        // Handle the change here, e.g., update other parts of the UI or call a service
+    }
+}
+
+<select @onchange="OnCategoryChanged" class="form-control">
+    @foreach (var category in categories)
+    {
+        <option value="@category.Id">@category.Name</option>
+    }
+</select>

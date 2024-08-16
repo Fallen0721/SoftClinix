@@ -1,0 +1,145 @@
+﻿ @page "/d_complement"
+@inherits LayoutComponentBase
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Web
+ 
+<PageTitle>Datos Complementarios</PageTitle>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="/">Registro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/estadopaciente">Paciente Datos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/gfamiliar">Grupo Familiar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/d_complement">Extras</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<form asp-action="Index" method="post" enctype="multipart/form-data">
+    <h1>Datos Complementarios</h1>
+    <div class="container">
+        <h2>Identificación</h2>
+        <div class="image-upload-container">
+            <div class="image-upload-field col-4">
+                <label class="label" for="foto">Foto:</label>
+                <InputFile id="Foto" OnChange="(e) => OnInputFileChange(e, 1)" />
+                @if (photo != null)
+                {
+                    <img class="image-preview" src="@photo" alt="Foto" />
+                }
+                else
+                {
+                    <div class="image-placeholder">Espacio reservado</div>
+                }
+            </div>
+            <div class="image-upload-field col-4">
+                <label class="label" for="huellaDigital">Huella Digital:</label>
+                <InputFile id="Huella" OnChange="(e) => OnInputFileChange(e, 2)" />
+                @if (huella != null)
+                {
+                    <img class="image-preview" src="@huella" alt="Huella" />
+                }
+                else
+                {
+                    <div class="image-placeholder">Espacio reservado</div>
+                }
+            </div>
+            <label class="label" for="firma">Firma:</label>
+            <div class="image-upload-field col-4">
+                <InputFile id="firma" OnChange="(e) => OnInputFileChange(e, 3)" />
+                @if (sign != null)
+                {
+                    <img class="image-preview" src="@sign" alt="Firma" />
+                }
+                else
+                {
+                    <div class="image-preview">Espacio reservado</div>
+                }
+            </div>
+            <div class="col-4">
+                <label class="label" for="Rasgos">Rasgos Físicos:</label>
+                <input type="text" id="Rasgos" class="container">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Datos Geográficos</h2>
+        <div class="row">
+            <div class="col-4">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" class="form-control">
+            </div>
+            <div class="col-4">
+                <label for="Departamento">Departamento:</label>
+                <input type="text" id="Departamento" class="textarea">
+            </div>
+            <div class="col-4">
+                <label for="Municipio">Municipio:</label>
+                <input type="text" id="Municipio" class="form-control">
+            </div>
+            <div class="col-4">
+                <label for="referencias">Referencias:</label>
+                <input type="text" id="referencias" class="form-control">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Datos Adicionales</h2>
+        <div class="row">
+            <div class="col-4">
+                <label for="grupoSanguineo">Grupo Sanguíneo:</label>
+                <CategorySelector />
+
+            </div>
+            <div class="col-4">
+                <label for="codigoBarras">Código de Barras:</label>
+                <input type="text" id="codigoBarras" class="form-control">
+            </div>
+            <div class="col-4">
+                <label for="personasDeReferencias">Personas de Referencias:</label>
+                <input type="text" id="personasDeReferencias" class="form-control">
+            </div>
+        </div>
+    </div>
+</form>
+@code {
+
+    private string? photo;
+    private string? huella;
+    private string? sign;
+
+    //Mostrar en min Imagenes
+    private async Task OnInputFileChange(InputFileChangeEventArgs e, int imageNumber)
+    {
+        var file = e.File;
+        var resizedImageFile = await file.RequestImageFileAsync("image/png", 500, 150); // Redimensionar la imagen
+        var buffer = new byte[resizedImageFile.Size];
+        await resizedImageFile.OpenReadStream().ReadAsync(buffer);
+        var imageData = $"data:image/png;base64,{Convert.ToBase64String(buffer)}";
+
+        switch (imageNumber)
+        {
+            case 1:
+                photo = imageData;
+                break;
+            case 2:
+                huella = imageData;
+                break;
+            case 3:
+                sign = imageData;
+                break;
+        }
+    }
+}
+
+

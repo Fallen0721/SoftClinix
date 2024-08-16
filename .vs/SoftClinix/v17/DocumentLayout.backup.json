@@ -1,0 +1,385 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\pages\\modulo2\\registrohospi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\modulo2\\registrohospi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\pages\\modulo2\\registrodiagnostico.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\modulo2\\registrodiagnostico.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\pages\\modulo2\\medicostratantes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\modulo2\\medicostratantes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\pages\\modulo2\\garantia.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\modulo2\\garantia.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\pages\\v_derechos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\v_derechos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\pages\\redirecttologin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\redirecttologin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\pages\\gfamiliar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\gfamiliar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\pages\\d_complement.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\d_complement.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\pages\\categoryselector.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\categoryselector.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\pages\\funciones_pacientes\\model\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\funciones_pacientes\\model\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\dell\\source\\repos\\softclinix\\softclinix\\softclinix.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\softclinix.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\MainLayout.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\MainLayout.razor",
+              "RelativeToolTip": "SoftClinix\\MainLayout.razor",
+              "ViewState": "AgIAAEAAAAAANDMzMzMLwA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T06:04:36.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\Weather.razor",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\Weather.razor",
+              "RelativeToolTip": "SoftClinix\\Pages\\Weather.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:34:45.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "V_Derechos.razor",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\V_Derechos.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\V_Derechos.razor",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\V_Derechos.razor",
+              "RelativeToolTip": "SoftClinix\\Pages\\V_Derechos.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:34:43.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Host.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\_Host.cshtml",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\_Host.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\_Host.cshtml*",
+              "RelativeToolTip": "SoftClinix\\Pages\\_Host.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:32:48.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "SoftClinix\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:33:36.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Program.cs",
+              "RelativeDocumentMoniker": "SoftClinix\\Program.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Program.cs",
+              "RelativeToolTip": "SoftClinix\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T05:33:02.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\App.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\App.razor",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\App.razor",
+              "RelativeToolTip": "SoftClinix\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:33:07.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Garantia.razor",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\modulo2\\Garantia.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\modulo2\\Garantia.razor",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\modulo2\\Garantia.razor",
+              "RelativeToolTip": "SoftClinix\\Pages\\modulo2\\Garantia.razor",
+              "ViewState": "AgIAAEkAAACANDMzMzMrwBAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:34:52.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MedicosTratantes.razor",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\modulo2\\MedicosTratantes.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\modulo2\\MedicosTratantes.razor",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\modulo2\\MedicosTratantes.razor",
+              "RelativeToolTip": "SoftClinix\\Pages\\modulo2\\MedicosTratantes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:34:53.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegistroHospi.razor",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\modulo2\\RegistroHospi.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\modulo2\\RegistroHospi.razor",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\modulo2\\RegistroHospi.razor",
+              "RelativeToolTip": "SoftClinix\\Pages\\modulo2\\RegistroHospi.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:34:56.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegistroDiagnostico.razor",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\modulo2\\RegistroDiagnostico.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\modulo2\\RegistroDiagnostico.razor",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\modulo2\\RegistroDiagnostico.razor",
+              "RelativeToolTip": "SoftClinix\\Pages\\modulo2\\RegistroDiagnostico.razor",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:34:55.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RedirectToLogin.razor",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\RedirectToLogin.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\RedirectToLogin.razor",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\RedirectToLogin.razor",
+              "RelativeToolTip": "SoftClinix\\Pages\\RedirectToLogin.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:34:38.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\Login.razor",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\Login.razor",
+              "RelativeToolTip": "SoftClinix\\Pages\\Login.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:34:27.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\Home.razor",
+              "RelativeToolTip": "SoftClinix\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:34:24.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GFamiliar.razor",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\GFamiliar.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\GFamiliar.razor",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\GFamiliar.razor",
+              "RelativeToolTip": "SoftClinix\\Pages\\GFamiliar.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:34:18.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "D_Complement.razor",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\D_Complement.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\D_Complement.razor",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\D_Complement.razor",
+              "RelativeToolTip": "SoftClinix\\Pages\\D_Complement.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:34:12.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CategorySelector.razor",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\CategorySelector.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\CategorySelector.razor",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\CategorySelector.razor",
+              "RelativeToolTip": "SoftClinix\\Pages\\CategorySelector.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:34:00.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\Funciones_Pacientes\\Model\\Category.cs",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\Funciones_Pacientes\\Model\\Category.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\Funciones_Pacientes\\Model\\Category.cs",
+              "RelativeToolTip": "SoftClinix\\Pages\\Funciones_Pacientes\\Model\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T05:33:48.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "SoftClinix\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\Models\\Category.cs",
+              "RelativeToolTip": "SoftClinix\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T05:33:20.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\_Imports.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\_Imports.razor",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\_Imports.razor",
+              "RelativeToolTip": "SoftClinix\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:33:11.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SoftClinix",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\SoftClinix.csproj",
+              "RelativeDocumentMoniker": "SoftClinix\\SoftClinix.csproj",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\SoftClinix\\SoftClinix\\SoftClinix.csproj",
+              "RelativeToolTip": "SoftClinix\\SoftClinix.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-16T05:30:07.577Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

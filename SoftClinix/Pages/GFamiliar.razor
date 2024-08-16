@@ -1,0 +1,97 @@
+﻿ @page "/gfamiliar"
+@inherits LayoutComponentBase
+ 
+
+<PageTitle>Grupo Familiar</PageTitle>
+
+
+<form asp-action="Index" method="post" enctype="multipart/form-data">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Registro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/estadopaciente">Paciente Datos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/gfamiliar">Grupo Familiar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/D_Complement">Datos Complementarios</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Grupo Familiar</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <label class="col-3 d-inline-block" for="Paciente">Paciente:</label>
+                <label class="col-3 d-inline-block" for="IDpaciente">0081722</label>
+                <label class="col-3 d-inline-block" for="NamePaciente">Edgar Jeovany Cruz Valderrama</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nombre Familiar</th>
+                    <th>Parentesco</th>
+                    <th>Condicion</th>
+                    <th>Habilitado</th>
+                    <th>C-Asegurado</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+</form>
+@code {
+    private string? NombrePaciente;
+    private string? InNombre;
+
+    private void GuardarGFamiliar()
+    {
+    //Mostrar Id y Nombre Paciente
+    }
+
+    private PacientesF[]? Familiares;
+
+   
+
+    public class PacientesF
+    {
+        public string? NombreF { get; set; }
+
+        public string? Parentesco { get; set; }
+
+        public string? Condicion { get; set; }
+
+        public string? Habilitado { get; set; }
+
+        public string? C_Asegurado { get; set; }
+
+       
+    }
+}
+
+
+
+

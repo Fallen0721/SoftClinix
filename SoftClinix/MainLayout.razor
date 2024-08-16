@@ -1,0 +1,125 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime JSRuntime
+@using SoftClinix.Layout
+@using Microsoft.AspNetCore.Components
+@using SoftClinix.Pages
+
+@if (Logueado == "false")
+{
+    <PageTitle>Iniciar Sesión</PageTitle>
+    <div class="modal d-block">
+
+        <div style="width: 35rem; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);">
+
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-center text-white">
+                    <h3>Iniciar Sesión</h3>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <label class="fw-bold">Usuario</label>
+                        <input class="form-control" @bind="user" />
+
+                        <label class="fw-bold">Contraseña</label>
+                        <input type="password" class="form-control" @bind="pass" />
+
+                        <div class="row text-danger d-@mensaje">
+                            <label class="fw-bold">Usuario o contraseña Incorrecta</label>
+                        </div>
+                    </div>                   
+                </div>
+
+                <div class="modal-footer">
+                    <div class="row text-end">
+                        <button class="btn btn-success" @onclick="Acceder">Acceder</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+}
+
+@if (Logueado == "true")
+{
+    <div class="page">
+        <div class="sidebar">
+            <NavMenu />
+        </div>
+
+        <main>
+            <div class="top-row px-4">
+                <button @onclick="CerrarSession">Cerrar Sesion</button>
+            </div>
+
+            <article class="content px-4">
+                @Body
+            </article>
+        </main>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+}
+
+
+
+
+<!-- Este codigo es para la verificación si el usuario o contraseña es correcta.-->
+@code {
+    //Declaración de variables para verificación
+    private string user = "", pass = "", mensaje = "none";
+    //Por mientras estos nombres hasta que esté la base de datos.
+    private string usuarioCorrecto = "admin", contrasenaCorrecta = "12345";
+    // Variable que indica si el usuario está logueado
+    private string Logueado = "";
+
+    protected override async void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            string logueado = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "Logueado");
+            if (string.IsNullOrEmpty(logueado))
+            {
+                await JSRuntime.InvokeVoidAsync("localStorage.setItem", "Logueado", "true");
+            }
+            else
+            {// Si hay información, actualiza la variable Logueado  
+                Logueado = logueado;
+            }
+            StateHasChanged();
+        }
+    }
+
+    //Esta vaina es para para manejar el intento de inicio de sesión
+    public async Task Acceder()
+    {
+
+        if(user == usuarioCorrecto && pass == contrasenaCorrecta)
+        {
+            // Si las credenciales que ingresas son correctas, oculta el mensaje de error y limpia los campos
+            mensaje = "none"; user = ""; pass = "";
+            // Guarda el estado de logueo en el almacenamiento local
+            await JSRuntime.InvokeVoidAsync("localStorage.setItem", "Logueado", "true");
+            Logueado = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "Logueado");
+            StateHasChanged();
+        }
+        else
+        { // Si las credenciales que ingresas son incorrectas, muestra el mensaje de error
+            mensaje = "block";
+        }
+    }
+        
+
+    public async Task CerrarSession()
+    {
+        await JSRuntime.InvokeVoidAsync("localStorage.setItem", "Logueado", "false");
+        Logueado = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "Logueado");
+        StateHasChanged();
+    }
+}

@@ -1,0 +1,163 @@
+﻿@page "/garantia"
+@using Microsoft.AspNetCore.Components.Forms
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/registro-paciente">Registro Enfermo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/registro-diagnostico">Registro Diagnostico</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/garantia">Garantia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/medicos-tratantes">Medicos Tratantes</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<EditForm Model="@planAtencionModel">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <fieldset class="container">
+        <legend>Plan de Atención</legend>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Plan:</label>
+                <InputText class="form-control" @bind="planAtencionModel.Plan" />
+            </div>
+            <div class="form-group col-md-3">
+                <label>Coaseguro %:</label>
+                <InputNumber class="form-control" @bind="planAtencionModel.Coaseguro" TValue="decimal" />
+            </div>
+            <div class="form-group col-md-3">
+                <label>Deducible:</label>
+                <InputNumber class="form-control" @bind="planAtencionModel.Deducible" TValue="decimal" />
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Moneda:</label>
+                <InputText class="form-control" @bind="planAtencionModel.Moneda" />
+            </div>
+            <div class="form-group col-md-6">
+                <label>No Contrato:</label>
+                <InputText class="form-control" @bind="planAtencionModel.NoContrato" />
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label>Sinestro:</label>
+                <InputText class="form-control" @bind="planAtencionModel.Sinestro" />
+            </div>
+            <div class="form-group col-md-4">
+                <label>Referencia 1:</label>
+                <InputText class="form-control" @bind="planAtencionModel.Referencia1" />
+            </div>
+            <div class="form-group col-md-4">
+                <label>Referencia 2:</label>
+                <InputText class="form-control" @bind="planAtencionModel.Referencia2" />
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset class="container">
+        <legend>Detalles del Plan</legend>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Documento</th>
+                    <th>Vencimiento</th>
+                    <th>Monto</th>
+                    <th>Moneda</th>
+                    <th>Plan</th>
+                    <th>%Coaseguro</th>
+                    <th>Deducible</th>
+                    <th>Moneda</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><InputText class="form-control" @bind="planAtencionModel.Documento" /></td>
+                    <td><InputDate class="form-control" @bind="planAtencionModel.Vencimiento" TValue="DateTime" /></td>
+                    <td><InputNumber class="form-control" @bind="planAtencionModel.Monto" TValue="decimal" /></td>
+                    <td>
+                        <InputSelect class="form-control" @bind="planAtencionModel.MonedaDetalle" TValue="string">
+                            <option value="LEMPIRAS">LEMPIRAS</option>
+                            <!-- Agrega más opciones aquí -->
+                        </InputSelect>
+                    </td>
+                    <td><InputText class="form-control" @bind="planAtencionModel.PlanDetalle" /></td>
+                    <td><InputNumber class="form-control" @bind="planAtencionModel.CoaseguroDetalle" TValue="decimal" /></td>
+                    <td><InputNumber class="form-control" @bind="planAtencionModel.DeducibleDetalle" TValue="decimal" /></td>
+                    <td><InputText class="form-control" @bind="planAtencionModel.MonedaDetalle" /></td>
+                </tr>
+                <tr>
+                    <td colspan="9" class="text-right">
+                        Total: @planAtencionModel.MontoTotal
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</EditForm>
+
+@code {
+    private PlanAtencionModel planAtencionModel = new PlanAtencionModel();
+
+
+
+    public class PlanAtencionModel
+
+    {
+
+        public string Plan { get; set; }
+
+        public decimal Coaseguro { get; set; }
+
+        public decimal Deducible { get; set; }
+
+        public string Moneda { get; set; }
+
+        public string NoContrato { get; set; }
+
+        public string Sinestro { get; set; }
+
+        public string Referencia1 { get; set; }
+
+        public string Referencia2 { get; set; }
+
+
+
+        public string Documento { get; set; }
+
+        public DateTime Vencimiento { get; set; } = DateTime.Now;
+
+        public decimal Monto { get; set; }
+
+        public string MonedaDetalle { get; set; }
+
+        public string PlanDetalle { get; set; }
+
+        public decimal CoaseguroDetalle { get; set; }
+
+        public decimal DeducibleDetalle { get; set; }
+
+
+
+        public decimal MontoTotal => Monto; // Aquí podrías sumar más valores si tienes múltiples filas.
+
+    }
+}
