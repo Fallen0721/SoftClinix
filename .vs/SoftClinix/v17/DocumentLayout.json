@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\pc gaming\\desktop\\softclinix\\softclinix\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\pc gaming\\desktop\\softclinix\\softclinix\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\pc gaming\\desktop\\softclinix\\softclinix\\pages\\d_complement.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\d_complement.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\pc gaming\\desktop\\softclinix\\softclinix\\pages\\gfamiliar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\gfamiliar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\pc gaming\\desktop\\softclinix\\softclinix\\pages\\estadopaciente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\estadopaciente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\MainLayout.razor",
-              "RelativeDocumentMoniker": "SoftClinix\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\MainLayout.razor",
-              "RelativeToolTip": "SoftClinix\\MainLayout.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "D_Complement.razor",
+              "DocumentMoniker": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\Pages\\D_Complement.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\D_Complement.razor",
+              "ToolTip": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\Pages\\D_Complement.razor",
+              "RelativeToolTip": "SoftClinix\\Pages\\D_Complement.razor",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAAAHEAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-16T06:04:36.785Z",
+              "WhenOpened": "2024-08-17T01:27:37.335Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\Pages\\Home.razor",
+              "RelativeToolTip": "SoftClinix\\Pages\\Home.razor",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAHcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-17T00:59:34.578Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Estadopaciente.razor",
+              "DocumentMoniker": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\Pages\\Estadopaciente.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\Estadopaciente.razor",
+              "ToolTip": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\Pages\\Estadopaciente.razor",
+              "RelativeToolTip": "SoftClinix\\Pages\\Estadopaciente.razor",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-17T01:27:32.171Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GFamiliar.razor",
+              "DocumentMoniker": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\Pages\\GFamiliar.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\GFamiliar.razor",
+              "ToolTip": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\Pages\\GFamiliar.razor",
+              "RelativeToolTip": "SoftClinix\\Pages\\GFamiliar.razor",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-17T01:27:25.159Z",
               "IsPinned": true,
               "EditorCaption": ""
             }

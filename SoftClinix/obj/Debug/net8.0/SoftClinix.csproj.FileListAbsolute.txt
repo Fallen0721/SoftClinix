@@ -60,3 +60,4 @@ C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\refint\SoftCli
 C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.pdb
 C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.genruntimeconfig.cache
 C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\ref\SoftClinix.dll
+C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\obj\Debug\net8.0\SoftClinix.sourcelink.json

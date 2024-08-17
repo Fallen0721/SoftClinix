@@ -4,7 +4,7 @@
 @using Microsoft.AspNetCore.Components.Web
  
 <PageTitle>Datos Complementarios</PageTitle>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-black">
     <div class="container-fluid">
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -17,7 +17,7 @@
                 <a class="nav-link" href="/gfamiliar">Grupo Familiar</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/d_complement">Extras</a>
+                <a class="nav-link" href="/d_complement">Datos complementarios</a>
             </li>
         </ul>
     </div>
@@ -111,6 +111,8 @@
             </div>
         </div>
     </div>
+    <a href="/estadopaciente"><button class="btn btn-primary"> guardar</button></a>
+    <a href="/GFamiliar"><button class="btn btn-primary"> pagina anterior  </button></a>
 </form>
 @code {
 
@@ -142,4 +144,15 @@
     }
 }
 
+<style>
+    /* Esto arregla el problema de la barra */
+    .navbar {
+        position: relative;
+        margin-left: 250px;
+    }
 
+    .btn {
+        margin-top: 20px;
+        margin-left: 1000px;
+    }
+</style>

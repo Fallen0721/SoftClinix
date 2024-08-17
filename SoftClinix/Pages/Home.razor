@@ -2,7 +2,7 @@
 @using SoftClinix.Layout
 
 @inherits LayoutComponentBase
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar  navbar-light bg-black">
     <div class="container-fluid">
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -15,101 +15,101 @@
                 <a class="nav-link" href="/gfamiliar">Grupo Familiar</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/d_complement">Extras</a>
+                <a class="nav-link" href="/d_complement">Datos Complementarios</a>
             </li>
         </ul>
     </div>
 </nav>
 <form asp-action="Index" method="post" enctype="multipart/form-data">
-   
-<div class="container">
-    <h3>Datos Personales</h3>
-    <div class="form-row">
-        <div class="form-column">
-            <label>Nombres:</label>
-            <input type="text" @bind="nombres" class="form-control" />
+
+    <div class="container">
+        <h3>Datos Personales</h3>
+        <div class="form-row">
+            <div class="form-column">
+                <label>Nombres:</label>
+                <input type="text" @bind="nombres" class="form-control" />
+            </div>
+            <div class="form-column">
+                <label>Apellidos:</label>
+                <input type="text" @bind="apellidos" class="form-control" />
+            </div>
         </div>
-        <div class="form-column">
-            <label>Apellidos:</label>
-            <input type="text" @bind="apellidos" class="form-control" />
+        <div class="form-row">
+            <div class="form-column">
+                <label>Sexo:</label>
+                <select @bind="sexo" class="form-control">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+            </div>
+            <div class="form-column">
+                <label>Fecha de Nacimiento:</label>
+                <input type="date" @bind="fechaNacimiento" class="form-control" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-column">
+                <label>Estado Civil:</label>
+                <input type="text" @bind="estadoCivil" class="form-control" />
+            </div>
+            <div class="form-column">
+                <label>Ocupación:</label>
+                <input type="text" @bind="ocupacion" class="form-control" />
+            </div>
         </div>
     </div>
-    <div class="form-row">
-        <div class="form-column">
-            <label>Sexo:</label>
-            <select @bind="sexo" class="form-control">
-                <option value="Masculino">Masculino</option>
-                <option value="Femenino">Femenino</option>
-            </select>
-        </div>
-        <div class="form-column">
-            <label>Fecha de Nacimiento:</label>
-            <input type="date" @bind="fechaNacimiento" class="form-control" />
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="form-column">
-            <label>Estado Civil:</label>
-            <input type="text" @bind="estadoCivil" class="form-control" />
-        </div>
-        <div class="form-column">
-            <label>Ocupación:</label>
-            <input type="text" @bind="ocupacion" class="form-control" />
-        </div>
-    </div>
-</div>
 
 
-<div class="container">
-    <h3>Documentación y Contacto</h3>
-    <div class="form-row">
-        <div class="form-column">
-            <label>No. Historia:</label>
-            <input type="text" @bind="noHistoria" class="form-control" />
+    <div class="container">
+        <h3>Documentación y Contacto</h3>
+        <div class="form-row">
+            <div class="form-column">
+                <label>No. Historia:</label>
+                <input type="text" @bind="noHistoria" class="form-control" />
+            </div>
+            <div class="form-column">
+                <label>Doc. Identidad:</label>
+                <input type="text" @bind="docIdentidad" class="form-control" />
+            </div>
         </div>
-        <div class="form-column">
-            <label>Doc. Identidad:</label>
-            <input type="text" @bind="docIdentidad" class="form-control" />
+        <div class="form-row">
+            <div class="form-column">
+                <label>Dirección:</label>
+                <input type="text" @bind="direccion" class="form-control" />
+            </div>
+            <div class="form-column">
+                <label>Teléfonos:</label>
+                <input type="text" @bind="telefonos" class="form-control" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-column">
+                <label>E-Mail:</label>
+                <input type="email" @bind="email" class="form-control" />
+            </div>
         </div>
     </div>
-    <div class="form-row">
-        <div class="form-column">
-            <label>Dirección:</label>
-            <input type="text" @bind="direccion" class="form-control" />
-        </div>
-        <div class="form-column">
-            <label>Teléfonos:</label>
-            <input type="text" @bind="telefonos" class="form-control" />
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="form-column">
-            <label>E-Mail:</label>
-            <input type="email" @bind="email" class="form-control" />
-        </div>
-    </div>
-</div>
 
 
-<div class="container">
-    <h3>Información de Salud</h3>
-    <div class="form-row">
-        <div class="form-column">
-            <label>Estado de Historia:</label>
-            <input type="text" @bind="estadoHistoria" class="form-control" />
-        </div>
-        <div class="form-column">
-            <label>Plan de Atención:</label>
-            <input type="text" @bind="planAtencion" class="form-control" />
-        </div>
-        <div class="form-column">
-            <label>Médico:</label>
-            <input type="text" @bind="medico" class="form-control" />
+    <div class="container">
+        <h3>Información de Salud</h3>
+        <div class="form-row">
+            <div class="form-column">
+                <label>Estado de Historia:</label>
+                <input type="text" @bind="estadoHistoria" class="form-control" />
+            </div>
+            <div class="form-column">
+                <label>Plan de Atención:</label>
+                <input type="text" @bind="planAtencion" class="form-control" />
+            </div>
+            <div class="form-column">
+                <label>Médico:</label>
+                <input type="text" @bind="medico" class="form-control" />
+            </div>
         </div>
     </div>
-</div>
 
-<button @onclick="GuardarDatos" class="btn btn-primary">Guardar</button>
+    <a href="/estadopaciente"><button class="btn btn-primary">siguiente página</button></a>
 
 </form>
 
@@ -150,10 +150,14 @@
     .form-column {
         flex: 1;
     }
-
- 
+    /* Esto arregla el problema de la barra */
+    .navbar{
+        position:relative;
+        margin-left: 250px;
+    }
 
     .btn {
         margin-top: 20px;
+        margin-left: 1000px;
     }
 </style>
