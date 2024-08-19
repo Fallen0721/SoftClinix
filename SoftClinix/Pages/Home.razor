@@ -109,7 +109,9 @@
         </div>
     </div>
 
-    <a href="/estadopaciente"><button class="btn btn-primary">siguiente página</button></a>
+    <div class="button-container">
+        <a href="/estadopaciente" class="btn btn-primary">Siguiente Página</a>
+    </div>
 
 </form>
 
@@ -139,25 +141,36 @@
     .form-container {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 20px; /* Espacio entre elementos */
     }
 
     .form-row {
         display: flex;
         gap: 15px;
+        justify-content: space-between;
+        margin-bottom: 15px;
     }
 
     .form-column {
         flex: 1;
     }
-    /* Esto arregla el problema de la barra */
-    .navbar{
-        position:relative;
+
+    .navbar {
+        position: relative;
         margin-left: 250px;
     }
 
-    .btn {
+    .button-container {
+        display: flex;
+        justify-content: flex-end; /* Alinea el botón a la derecha */
         margin-top: 20px;
-        margin-left: 1000px;
+        padding-right: 20px; /* Añade un padding derecho para que no esté pegado al borde */
     }
+
+    .btn {
+        margin-top: 10px;
+        padding: 10px 20px; /* Añade padding para un mejor tamaño del botón */
+        font-size: 16px; /* Tamaño de texto más grande */
+    }
+
 </style>

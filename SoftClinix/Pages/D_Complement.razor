@@ -1,8 +1,8 @@
-﻿ @page "/d_complement"
+﻿@page "/d_complement"
 @inherits LayoutComponentBase
 @using Microsoft.AspNetCore.Components.Forms
 @using Microsoft.AspNetCore.Components.Web
- 
+
 <PageTitle>Datos Complementarios</PageTitle>
 <nav class="navbar navbar-expand-lg navbar-light bg-black">
     <div class="container-fluid">
@@ -27,8 +27,8 @@
     <h1>Datos Complementarios</h1>
     <div class="container">
         <h2>Identificación</h2>
-        <div class="image-upload-container">
-            <div class="image-upload-field col-4">
+        <div class="image-upload-container row">
+            <div class="image-upload-field col-6">
                 <label class="label" for="foto">Foto:</label>
                 <InputFile id="Foto" OnChange="(e) => OnInputFileChange(e, 1)" />
                 @if (photo != null)
@@ -40,7 +40,7 @@
                     <div class="image-placeholder">Espacio reservado</div>
                 }
             </div>
-            <div class="image-upload-field col-4">
+            <div class="image-upload-field col-6">
                 <label class="label" for="huellaDigital">Huella Digital:</label>
                 <InputFile id="Huella" OnChange="(e) => OnInputFileChange(e, 2)" />
                 @if (huella != null)
@@ -52,8 +52,8 @@
                     <div class="image-placeholder">Espacio reservado</div>
                 }
             </div>
-            <label class="label" for="firma">Firma:</label>
-            <div class="image-upload-field col-4">
+            <div class="image-upload-field col-6">
+                <label class="label" for="firma">Firma:</label>
                 <InputFile id="firma" OnChange="(e) => OnInputFileChange(e, 3)" />
                 @if (sign != null)
                 {
@@ -61,12 +61,12 @@
                 }
                 else
                 {
-                    <div class="image-preview">Espacio reservado</div>
+                    <div class="image-placeholder">Espacio reservado</div>
                 }
             </div>
-            <div class="col-4">
+            <div class="col-6">
                 <label class="label" for="Rasgos">Rasgos Físicos:</label>
-                <input type="text" id="Rasgos" class="container">
+                <input type="text" id="Rasgos" class="form-control">
             </div>
         </div>
     </div>
@@ -74,19 +74,19 @@
     <div class="container">
         <h2>Datos Geográficos</h2>
         <div class="row">
-            <div class="col-4">
+            <div class="col-6">
                 <label for="direccion">Dirección:</label>
                 <input type="text" id="direccion" class="form-control">
             </div>
-            <div class="col-4">
+            <div class="col-6">
                 <label for="Departamento">Departamento:</label>
-                <input type="text" id="Departamento" class="textarea">
+                <input type="text" id="Departamento" class="form-control">
             </div>
-            <div class="col-4">
+            <div class="col-6">
                 <label for="Municipio">Municipio:</label>
                 <input type="text" id="Municipio" class="form-control">
             </div>
-            <div class="col-4">
+            <div class="col-6">
                 <label for="referencias">Referencias:</label>
                 <input type="text" id="referencias" class="form-control">
             </div>
@@ -96,24 +96,26 @@
     <div class="container">
         <h2>Datos Adicionales</h2>
         <div class="row">
-            <div class="col-4">
+            <div class="col-6">
                 <label for="grupoSanguineo">Grupo Sanguíneo:</label>
                 <CategorySelector />
-
             </div>
-            <div class="col-4">
+            <div class="col-6">
                 <label for="codigoBarras">Código de Barras:</label>
                 <input type="text" id="codigoBarras" class="form-control">
             </div>
-            <div class="col-4">
+            <div class="col-6">
                 <label for="personasDeReferencias">Personas de Referencias:</label>
                 <input type="text" id="personasDeReferencias" class="form-control">
             </div>
         </div>
     </div>
-    <a href="/estadopaciente"><button class="btn btn-primary"> guardar</button></a>
-    <a href="/GFamiliar"><button class="btn btn-primary"> pagina anterior  </button></a>
+    <div class="button-container">
+        <a href="/estadopaciente" class="btn btn-primary">Guardar</a>
+        <a href="/GFamiliar" class="btn btn-secondary">Página anterior</a>
+    </div>
 </form>
+
 @code {
 
     private string? photo;
@@ -146,13 +148,83 @@
 
 <style>
     /* Esto arregla el problema de la barra */
+    /* Ajuste de la barra de navegación */
     .navbar {
         position: relative;
         margin-left: 250px;
     }
 
-    .btn {
+    /* Contenedor principal */
+    .container {
+        max-width: 900px;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         margin-top: 20px;
-        margin-left: 1000px;
     }
+
+    /* Contenedor de imagen y otros elementos */
+    .image-upload-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .image-upload-field {
+        flex: 1;
+        min-width: 45%; /* Asegura que los campos no se hagan demasiado pequeños */
+        margin-bottom: 20px;
+    }
+
+    .image-placeholder, .image-preview {
+        width: 100%;
+        height: 150px;
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f5f5f5;
+        margin-top: 10px;
+        border-radius: 4px;
+    }
+
+    /* Ajuste del input de texto */
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"], .form-control {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    /* Contenedor de botones de navegación */
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    /* Estilo para los botones */
+    .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+        color: #fff;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+
 </style>

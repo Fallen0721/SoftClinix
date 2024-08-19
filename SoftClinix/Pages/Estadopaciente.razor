@@ -54,9 +54,11 @@
                 <textarea class="form-control" rows="3">NO PAGO</textarea>
             </div>
         </div>
-        <a href="/GFamiliar"><button class="btn btn-primary"> siguiente página</button></a>
-        <a href="/"><button class="btn btn-primary"> página anterior</button></a>
-        <!-- Otras pestañas pueden ser llenadas de manera similar -->
+        <div class="button-container">
+            <a href="/GFamiliar" class="btn btn-primary">Siguiente página</a>
+            <a href="/" class="btn btn-secondary">Página anterior</a>
+        </div>
+
     </div>
 
 </div>
@@ -66,9 +68,10 @@
     .main-container {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start; /* Ajusta la alineación vertical al principio del contenedor */
         width: 100%;
-        height: auto; /* Esto va hacer que el contenedor principal ocupe toda la altura de la pantalla */
+        height: auto;
+        padding-top: 20px; /* Añade espacio en la parte superior */
     }
 
     .container {
@@ -77,6 +80,7 @@
         padding: 20px;
         border-radius: 8px;
         width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra para destacar el contenedor */
     }
 
     .form-group {
@@ -85,7 +89,6 @@
         gap: 20px;
     }
 
-    /* Esto arregla el problema de la barra */
     .navbar {
         position: relative;
         margin-left: 250px;
@@ -95,39 +98,27 @@
         padding-top: 60px; /* Ajusta esto según el tamaño de tu navbar */
     }
 
-    .tabs {
+    .button-container {
         display: flex;
-        border-bottom: 1px solid #ccc;
-    }
-
-    .tab-button {
-        background-color: #f1f1f1;
-        border: none;
-        outline: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-        .tab-button:hover {
-            background-color: #ddd;
-        }
-
-        .tab-button.active {
-            background-color: #ccc;
-        }
-
-    .tab-content {
-        display: none;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-top: none;
+        justify-content: flex-end; /* Alinea los botones a la derecha */
+        gap: 15px; /* Espacio entre los botones */
+        margin-top: 20px;
     }
 
     .btn {
-        margin-left: 800px;
+        padding: 10px 20px; /* Ajusta el padding para un tamaño de botón más consistente */
+        font-size: 16px; /* Tamaño de texto más grande para los botones */
     }
 
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+        color: #fff;
+    }
 
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
 
 </style>
