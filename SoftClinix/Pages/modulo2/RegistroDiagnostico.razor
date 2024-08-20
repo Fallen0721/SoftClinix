@@ -1,7 +1,7 @@
 ﻿@page "/registro-diagnostico"
 @using Microsoft.AspNetCore.Components.Forms
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar  navbar-light bg-black">
     <div class="container-fluid">
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -27,20 +27,20 @@
     <div class="container">
         <div class="form-group">
             <label>Fecha:</label>
-            <InputDate class="form-control" @bind="diagnosticoModel.Fecha" TValue="DateTime" />
+            <InputDate class="form-control" @bind-Value="diagnosticoModel.Fecha" TValue="DateTime" />
         </div>
 
         <div class="form-group">
             <label>Servicio:</label>
-            <InputSelect class="form-control" @bind="diagnosticoModel.Servicio" TValue="string">
+            <InputSelect class="form-control" @bind-Value="diagnosticoModel.Servicio" TValue="string">
                 <option value="ALERGOLOGIA">ALERGOLOGIA</option>
-                <!-- Agrega más opciones aquí -->
+               
             </InputSelect>
         </div>
 
         <div class="form-group">
             <label>Médico:</label>
-            <InputText class="form-control" @bind="diagnosticoModel.Medico" />
+            <InputText class="form-control" @bind-Value="diagnosticoModel.Medico" />
         </div>
     </div>
 
@@ -48,32 +48,32 @@
         <legend>Diagnósticos</legend>
         <div class="form-group">
             <label>Principal:</label>
-            <InputText class="form-control" @bind="diagnosticoModel.DiagnosticoPrincipal" />
+            <InputText class="form-control" @bind-Value="diagnosticoModel.DiagnosticoPrincipal" />
         </div>
         <div class="form-group">
             <label>Asociado 1:</label>
-            <InputText class="form-control" @bind="diagnosticoModel.DiagnosticoAsociado1" />
+            <InputText class="form-control" @bind-Value="diagnosticoModel.DiagnosticoAsociado1" />
         </div>
         <div class="form-group">
             <label>Asociado 2:</label>
-            <InputText class="form-control" @bind="diagnosticoModel.DiagnosticoAsociado2" />
+            <InputText class="form-control" @bind-Value="diagnosticoModel.DiagnosticoAsociado2" />
         </div>
     </fieldset>
 
     <div class="container">
         <div class="form-group">
             <label>Médico Remitente:</label>
-            <InputText class="form-control" @bind="diagnosticoModel.MedicoRemitente" />
+            <InputText class="form-control" @bind-Value="diagnosticoModel.MedicoRemitente" />
         </div>
 
         <div class="form-group">
             <label>Enfermera:</label>
-            <InputText class="form-control" @bind="diagnosticoModel.Enfermera" />
+            <InputText class="form-control" @bind-Value="diagnosticoModel.Enfermera" />
         </div>
 
         <div class="form-group">
             <label>Observaciones:</label>
-            <InputTextArea class="form-control" @bind="diagnosticoModel.Observaciones" />
+            <InputTextArea class="form-control" @bind-Value="diagnosticoModel.Observaciones" />
         </div>
     </div>
 
@@ -83,29 +83,16 @@
 @code {
     private DiagnosticoModel diagnosticoModel = new DiagnosticoModel();
 
-
-
     public class DiagnosticoModel
-
     {
-
         public DateTime Fecha { get; set; } = DateTime.Now;
-
         public string Servicio { get; set; }
-
         public string Medico { get; set; }
-
         public string DiagnosticoPrincipal { get; set; }
-
         public string DiagnosticoAsociado1 { get; set; }
-
         public string DiagnosticoAsociado2 { get; set; }
-
         public string MedicoRemitente { get; set; }
-
         public string Enfermera { get; set; }
-
         public string Observaciones { get; set; }
-
     }
 }
