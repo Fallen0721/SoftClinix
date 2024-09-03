@@ -1,0 +1,115 @@
+﻿@page "/historial-clinico"
+<nav class="navbar  navbar-light bg-black">
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/historial-clinico">Historial de paciente</a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/historialsick">Historial de enferandez</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+@code {
+    public class Paciente
+    {
+        public string Codigo { get; set; }
+        public string Nombre { get; set; }
+        public string PrimerApellido { get; set; }
+        public string SegundoApellido { get; set; }
+        public string DNI { get; set; }
+        public string SeguridadSocial { get; set; }
+        public string EstadoCivil { get; set; }
+        public DateTime FechaNacimiento { get; set; }
+        public string Telefono { get; set; }
+        public string Movil { get; set; }
+        public string Aseguradora { get; set; }
+        public string NumeroPoliza { get; set; }
+        public string NumeroTarjeta { get; set; }
+        public string Usuario { get; set; }
+        public string Direccion { get; set; }
+        public string Localidad { get; set; }
+        public string Provincia { get; set; }
+        public string CodigoPostal { get; set; }
+        public string Genero { get; set; }
+        public string GrupoSanguineo { get; set; }
+        public string Email { get; set; }
+    }
+
+    // Simulacion de servicio para obtener pacientes
+    private List<Paciente> pacientes = new List<Paciente>
+    {
+        new Paciente
+        {
+            Codigo = "P001",
+            Nombre = "Dionio",
+            PrimerApellido = "Fernandez",
+            SegundoApellido = "De Flores",
+            DNI = "142536988XJKY",
+            SeguridadSocial = "NSS789447889X",
+            EstadoCivil = "Divorciado-a",
+            FechaNacimiento = new DateTime(1969, 6, 25),
+            Telefono = "958778899",
+            Movil = "65889977",
+            Aseguradora = "DKV",
+            NumeroPoliza = "VGT XXALPHA45466",
+            NumeroTarjeta = "NTJT787779999WWW",
+            Usuario = "PABLITO11",
+            Direccion = "Camino de la Huerta 43",
+            Localidad = "Huetor Vega",
+            Provincia = "Granada",
+            CodigoPostal = "18456",
+            Genero = "Hombre",
+            GrupoSanguineo = "O+",
+            Email = "demiabuelasinrequeson@eurodigitalmudia.com"
+        }
+        // Agregar mas pacientes s qieren 
+    };
+
+    private Paciente paciente;
+    private string codigoPaciente;
+
+    private void BuscarPaciente()
+    {
+        paciente = pacientes.FirstOrDefault(p => p.Codigo == codigoPaciente);
+    }
+}
+
+<h3>Historial Clinico</h3>
+
+<div>
+    <label>Codigo del Paciente:</label>
+    <input type="text" @bind="codigoPaciente" placeholder="Ingrese codigo" class="form-control" />
+    <button @onclick="BuscarPaciente" class="btn btn-primary">Buscar</button>
+</div>
+
+@if (paciente != null)
+{
+    <div class="paciente-info">
+        <h4>Informacion del Paciente</h4>
+        <p><b>Nombre:</b> @paciente.Nombre @paciente.PrimerApellido @paciente.SegundoApellido</p>
+        <p><b>DNI:</b> @paciente.DNI</p>
+        <p><b>Seguro Social:</b> @paciente.SeguridadSocial</p>
+        <p><b>Estado Civil:</b> @paciente.EstadoCivil</p>
+        <p><b>Fecha de Nacimiento:</b> @paciente.FechaNacimiento.ToString("dd/MM/yyyy")</p>
+        <p><b>Telefono:</b> @paciente.Telefono</p>
+        <p><b>Movil:</b> @paciente.Movil</p>
+        <p><b>Aseguradora:</b> @paciente.Aseguradora</p>
+        <p><b>Numero de Poliza:</b> @paciente.NumeroPoliza</p>
+        <p><b>Numero de Tarjeta:</b> @paciente.NumeroTarjeta</p>
+        <p><b>Usuario:</b> @paciente.Usuario</p>
+        <p><b>Direccion:</b> @paciente.Direccion</p>
+        <p><b>Localidad:</b> @paciente.Localidad</p>
+        <p><b>Provincia:</b> @paciente.Provincia</p>
+        <p><b>Codigo Postal:</b> @paciente.CodigoPostal</p>
+        <p><b>Genero:</b> @paciente.Genero</p>
+        <p><b>Grupo Sanguineo:</b> @paciente.GrupoSanguineo</p>
+        <p><b>Email:</b> @paciente.Email</p>
+    </div>
+}
+else
+{
+    <p>No se encontro informacion para el codigo ingresado.</p>
+}
