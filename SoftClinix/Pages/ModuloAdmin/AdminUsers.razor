@@ -1,0 +1,85 @@
+﻿@page "/adminusers"
+
+@inject UserService UserService
+
+<h3>Gestionar Usuarios</h3>
+
+<div>
+    <input type="text" @bind="nuevoNombreUsuario" placeholder="Ingrese nombre de usuario" class="form-control" />
+    <input type="password" @bind="nuevaContrasena" placeholder="Ingrese contrasena" class="form-control" />
+    <button @onclick="AgregarUsuario" class="btn btn-primary">Agregar Usuario</button>
+</div>
+
+<h4>Usuarios Actuales</h4>
+<ul>
+    @foreach (var usuario in usuarios)
+    {
+        <li>
+            <b>@usuario.NombreUsuario</b> (Creado el @usuario.FechaCreacion)
+            <button @onclick="() => MostrarEditarUsuario(usuario.NombreUsuario)" class="btn btn-secondary btn-sm">Editar</button>
+            <button @onclick="() => EliminarUsuario(usuario.NombreUsuario)" class="btn btn-danger btn-sm">Eliminar</button>
+        </li>
+    }
+</ul>
+
+@if (usuarioEditando != null)
+{
+    <div>
+        <h5>Editar Usuario: @usuarioEditando.NombreUsuario</h5>
+        <input type="password" @bind="editandoContrasena" placeholder="Ingrese nueva contrasena" class="form-control" />
+        <button @onclick="EditarUsuario" class="btn btn-success">Guardar Cambios</button>
+        <button @onclick="CancelarEdicion" class="btn btn-secondary">Cancelar</button>
+    </div>
+}
+
+@code {
+    private string nuevoNombreUsuario;
+    private string nuevaContrasena;
+    private string editandoContrasena;
+    private List<UserService.Usuario> usuarios = new List<UserService.Usuario>();
+    private UserService.Usuario usuarioEditando;
+
+    protected override void OnInitialized()
+    {
+        usuarios = UserService.ObtenerUsuarios();
+    }
+
+    private void AgregarUsuario()
+    {
+        if (!string.IsNullOrWhiteSpace(nuevoNombreUsuario) && !string.IsNullOrWhiteSpace(nuevaContrasena))
+        {
+            UserService.AgregarUsuario(nuevoNombreUsuario, nuevaContrasena);
+            usuarios = UserService.ObtenerUsuarios();
+            nuevoNombreUsuario = string.Empty;
+            nuevaContrasena = string.Empty;
+        }
+    }
+
+    private void EliminarUsuario(string nombreUsuario)
+    {
+        UserService.EliminarUsuario(nombreUsuario);
+        usuarios = UserService.ObtenerUsuarios();
+    }
+
+    private void MostrarEditarUsuario(string nombreUsuario)
+    {
+        usuarioEditando = usuarios.FirstOrDefault(u => u.NombreUsuario == nombreUsuario);
+        editandoContrasena = usuarioEditando?.Contrasena;
+    }
+
+    private void EditarUsuario()
+    {
+        if (usuarioEditando != null && !string.IsNullOrWhiteSpace(editandoContrasena))
+        {
+            UserService.EditarUsuario(usuarioEditando.NombreUsuario, editandoContrasena);
+            usuarios = UserService.ObtenerUsuarios();
+            CancelarEdicion();
+        }
+    }
+
+    private void CancelarEdicion()
+    {
+        usuarioEditando = null;
+        editandoContrasena = string.Empty;
+    }
+}
