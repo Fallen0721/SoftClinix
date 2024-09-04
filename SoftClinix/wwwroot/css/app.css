@@ -109,17 +109,18 @@ h1, h2 {
 
 /*apareiencia de los formularios*/
 .container {
-    display: flex;
-    background-color: #fff;
+    display:flex;
+    align-items:center;
+    margin: 40px auto;
     padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .col-4 {
     float: left;
-    width: 30%;
     padding: 0 10px;
     box-sizing: border-box;
 }
@@ -130,7 +131,7 @@ h1, h2 {
     display: block;
     margin-bottom: 5px;
 }
-
+/*
 input[type="text"], input[type="file"] {
     width: 100%;
     padding: 8px;
@@ -147,12 +148,7 @@ textarea {
     border-radius: 4px;
     height: 100px;
 }
-
-.form-control {
-    width: 100%;
-}
-
-
+*/
 
 .row:after, .container:after {
     content: "";
@@ -311,4 +307,58 @@ input[type="file"] {
 
 input[type="file"] {
     cursor: pointer;
+}
+
+/* Estilos generales para la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el encabezado de la tabla */
+thead {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    gap: 20px;
+}
+
+/* Estilos para el cuerpo de la tabla */
+tbody {
+    background-color: #fff;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+/* Estilos para las filas de la tabla */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para el borde de la tabla */
+table th, table td {
+    border: 1px solid #ccc;
+}
+
+/* Estilos para los labels */
+label {
+display: block;
+margin-bottom: 10px;
+font-weight:bold;
+color: #333;
 }

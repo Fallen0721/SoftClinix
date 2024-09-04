@@ -1,4 +1,5 @@
 ﻿@page "/estadopaciente"
+
 <nav class="navbar navbar-light bg-black">
     <div class="container-fluid">
         <ul class="navbar-nav">
@@ -18,67 +19,52 @@
     </div>
 </nav>  
 
-
-<div class="main-container">
-    <div class="container">
-
-        <h2>Registro de Pacientes</h2>
-        <div id="DatosGenerales" class="tab-content" style="display: block;">
-            <div class="form-group">
+  <div class="container">
+    <div class="row">
+        <h3 class="text-muted mb-4">Registro de Pacientes</h3>
+            <div class="col-4">
                 <label>Fecha Control Inicio:</label>
                 <input type="date" class="form-control" />
             </div>
-            <div class="form-group">
+            <div class="col-4">
                 <label>Fecha Control Fin:</label>
                 <input type="date" class="form-control" />
             </div>
-            <div class="form-group">
+            <div class="col-4">
                 <label>Fecha Baja:</label>
                 <input type="date" class="form-control" />
             </div>
-            <div class="form-group">
+            <div class="col-4">
                 <label>Documento:</label>
                 <input type="text" class="form-control" />
             </div>
-            <div class="form-group">
+       <div>
+            <h3 class="text-muted mb-4">Antecedentes Paciente</h3>
+           
+            <div class="col-4">
                 <input type="checkbox" id="estado" />
                 <label for="estado">Estado</label>
             </div>
-            <div class="form-group">
-                <label>Antecedentes Paciente</label>
+
+            <div class="col-4">
                 <input type="checkbox" id="apto" />
                 <label for="apto">Apto para atención</label>
             </div>
-            <div class="form-group">
+
+            <div class="col-4">
                 <label>Comentarios:</label>
                 <textarea class="form-control" rows="3">NO PAGO</textarea>
             </div>
         </div>
-        <div class="button-container">
-            <a href="/GFamiliar" class="btn btn-primary">Siguiente página</a>
-            <a href="/" class="btn btn-secondary">Página anterior</a>
-        </div>
-
     </div>
-
 </div>
 
+    <div class="button-container">
+        <a href="/GFamiliar" class="btn btn-primary">Siguiente página</a>
+        <a href="/" class="btn btn-secondary">Página anterior</a>
+    </div>
 
 <style>
-    .main-container {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start; /* Ajusta la alineación vertical al principio del contenedor */
-        width: 100%;
-        height: auto;
-        padding-top: 20px; /* Añade espacio en la parte superior */
-    }
-
-    .form-group {
-        margin-bottom: 15px;
-        width: 100%;
-        gap: 20px;
-    }
 
 
     body {

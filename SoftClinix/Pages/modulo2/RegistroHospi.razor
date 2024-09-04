@@ -20,31 +20,29 @@
     </div>
 </nav>
 
-<h3 class="text-center mb-5">Registro de Paciente</h3>
-
 <EditForm Model="@registroPaciente">
     <DataAnnotationsValidator />
     <ValidationSummary class="text-danger" />
 
-    <div class="container row mb-4">
-        <div class="col-md-6">
-            <div class="form-group mb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
                 <label>Secuencia HO:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.SecuenciaHO" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>No. Historia:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.NoHistoria" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Fecha y Hora Ingreso:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.FechaHoraIngreso" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Código de Barras:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.CodigoBarras" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Procedencia:</label>
                 <InputSelect class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Procedencia" TValue="int">
                     <option value="1">Opción 1</option>
@@ -52,56 +50,58 @@
                 </InputSelect>
             </div>
         </div>
-
-        <div class="col-md-6">
-            <h4 class="text-muted mb-4">Detalles de Hospitalización</h4>
-            <div class="form-group mb-3">
+      </div>
+        
+     <div class="container">
+        <div class="row">
+            <h3 class="text-muted mb-4">Detalles de Hospitalización</h3>
+            <div class="col-4">
                 <label>Presupuesto:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Presupuesto" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Paciente:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Paciente" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Habitación:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Habitacion" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Estancia Aprox.:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.EstanciaAprox" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Hora de Corte:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.HoraCorte" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Paquete de Atención:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.PaqueteAtencion" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Estado:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Estado" />
             </div>
         </div>
     </div>
 
-    <div class="container row mb-4">
-        <div class="col-md-12">
-            <h4 class="text-muted mb-4">Datos del Responsable</h4>
-            <div class="form-group mb-3">
+    <div class="container">
+        <div class="row">
+            <h3 class="text-muted mb-4">Datos del Responsable</h3>
+            <div class="col-4">
                 <label>Nombre:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.NombreResponsable" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Dirección:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.DireccionResponsable" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Documento:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.DocumentoResponsable" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Teléfono:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.TelefonoResponsable" />
             </div>
@@ -109,40 +109,40 @@
     </div>
 
     <!-- Datos del Aval -->
-    <div class="container row mb-4">
-        <div class="col-md-12">
-            <h4 class="text-muted mb-4">Datos del Aval</h4>
-            <div class="form-group mb-3">
+    <div class="container">
+        <div class="row">
+            <h3 class="text-muted mb-4">Datos del Aval</h3>
+            <div class="col-4">
                 <label>Aval 1:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Aval1" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Aval 2:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Aval2" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Aval 3:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Aval3" />
             </div>
         </div>
     </div>
 
-    <div class="container row mb-4">
-        <div class="col-md-12">
+    <div class="container">
+        <div class="row">
             <h4 class="text-muted mb-4">Plan de Atención</h4>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Plan:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Plan" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Abertura Máxima:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.AberturaMaxima" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Coaseguro %:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Coaseguro" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Deducible:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Deducible" />
             </div>
@@ -150,33 +150,37 @@
     </div>
 
     <!-- Otros Datos -->
-    <div class="container row mb-4">
-        <div class="col-md-12">
+    <div class="container">
+        <div class="row">
             <h4 class="text-muted mb-4">Otros Datos</h4>
-            <div class="form-group mb-3">
-                <label>Observaciones:</label>
-                <InputTextArea class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Observaciones" />
-            </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Documento Asociado:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.DocumentoAsociado" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Siniestro:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Siniestro" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Referencia 1:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Referencia1" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Referencia 2:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Referencia2" />
             </div>
-            <div class="form-group mb-3">
+            <div class="col-4">
                 <label>Placa No:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.PlacaNo" />
             </div>
+           <div class="row">
+                <div class="col-4">
+                    <label>Observaciones:</label>
+                    <InputTextArea class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Observaciones" />
+                </div>
+           </div>
+             
+
         </div>
     </div>
 

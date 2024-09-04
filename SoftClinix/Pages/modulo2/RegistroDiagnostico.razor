@@ -25,12 +25,13 @@
     <ValidationSummary />
 
     <div class="container">
-        <div class="form-group">
+      <div class="row">
+        <div class="col-4">
             <label>Fecha:</label>
             <InputDate class="form-control" @bind-Value="diagnosticoModel.Fecha" TValue="DateTime" />
         </div>
 
-        <div class="form-group">
+        <div class="col-4">
             <label>Servicio:</label>
             <InputSelect class="form-control" @bind-Value="diagnosticoModel.Servicio" TValue="string">
                 <option value="ALERGOLOGIA">ALERGOLOGIA</option>
@@ -38,43 +39,49 @@
             </InputSelect>
         </div>
 
-        <div class="form-group">
+        <div class="col-4">
             <label>Médico:</label>
             <InputText class="form-control" @bind-Value="diagnosticoModel.Medico" />
         </div>
-    </div>
+     </div>
+ </div>
 
-    <fieldset class="container">
-        <legend>Diagnósticos</legend>
-        <div class="form-group">
+    <div class="container">
+        <div class="row">
+        <h3 class="text-muted mb-4">Diagnósticos</h3>
+        <div class="col-4">
             <label>Principal:</label>
             <InputText class="form-control" @bind-Value="diagnosticoModel.DiagnosticoPrincipal" />
         </div>
-        <div class="form-group">
+        <div class="col-4">
             <label>Asociado 1:</label>
             <InputText class="form-control" @bind-Value="diagnosticoModel.DiagnosticoAsociado1" />
         </div>
-        <div class="form-group">
+        <div class="col-4">
             <label>Asociado 2:</label>
             <InputText class="form-control" @bind-Value="diagnosticoModel.DiagnosticoAsociado2" />
         </div>
-    </fieldset>
+      </div>
+    </div>
 
     <div class="container">
-        <div class="form-group">
+      <div class="row">
+        <div class="col-4">
             <label>Médico Remitente:</label>
             <InputText class="form-control" @bind-Value="diagnosticoModel.MedicoRemitente" />
         </div>
 
-        <div class="form-group">
+        <div class="col-4">
             <label>Enfermera:</label>
             <InputText class="form-control" @bind-Value="diagnosticoModel.Enfermera" />
         </div>
-
-        <div class="form-group">
+        <div>
+        <div class="col-4">
             <label>Observaciones:</label>
             <InputTextArea class="form-control" @bind-Value="diagnosticoModel.Observaciones" />
         </div>
+            </div>
+      </div>
     </div>
 
     <button type="submit" class="btn btn-primary">Guardar</button>
