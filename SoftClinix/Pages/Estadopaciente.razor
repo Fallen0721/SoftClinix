@@ -1,4 +1,7 @@
 ﻿@page "/estadopaciente"
+@using SoftClinix.Services
+@inject PacienteService PacienteService
+
 <nav class="navbar navbar-expand-lg navbar-light bg-black">
     <div class="container-fluid">
         <ul class="navbar-nav">
@@ -26,36 +29,36 @@
         <div id="DatosGenerales" class="tab-content" style="display: block;">
             <div class="form-group">
                 <label>Fecha Control Inicio:</label>
-                <input type="date" class="form-control" />
+                <input type="date" @bind="PacienteService.Paciente.FechaControlInicio" class="form-control" />
             </div>
             <div class="form-group">
                 <label>Fecha Control Fin:</label>
-                <input type="date" class="form-control" />
+                <input type="date" @bind="PacienteService.Paciente.FechaControlFinal" class="form-control" />
             </div>
             <div class="form-group">
                 <label>Fecha Baja:</label>
-                <input type="date" class="form-control" />
+                <input type="date" @bind="PacienteService.Paciente.FechaBaja" class="form-control" />
             </div>
             <div class="form-group">
                 <label>Documento:</label>
-                <input type="text" class="form-control" />
+                <input type="text" @bind="PacienteService.Paciente.Documento" class="form-control" />
             </div>
             <div class="form-group">
-                <input type="checkbox" id="estado" />
-                <label for="estado">Estado</label>
+                <input type="checkbox" @bind="PacienteService.Paciente.EstadoAntecedentePaciente" />
+                <label for="estado">Antecedentes Paciente</label>
             </div>
             <div class="form-group">
-                <label>Antecedentes Paciente</label>
-                <input type="checkbox" id="apto" />
+                
+                <input type="checkbox" @bind="PacienteService.Paciente.AptoParaAtencion" />
                 <label for="apto">Apto para atención</label>
             </div>
             <div class="form-group">
                 <label>Comentarios:</label>
-                <textarea class="form-control" rows="3">NO PAGO</textarea>
+                <textarea @bind="PacienteService.Paciente.Comentarios" class="form-control" rows="3"></textarea>
             </div>
         </div>
         <div class="button-container">
-            <a href="/GFamiliar" class="btn btn-primary">Siguiente página</a>
+            <a href="/d_complement" class="btn btn-primary">Siguiente página</a>
             <a href="/" class="btn btn-secondary">Página anterior</a>
         </div>
 
