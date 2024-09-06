@@ -9,83 +9,83 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SoftClinix
 build_property.RootNamespace = SoftClinix
-build_property.ProjectDir = C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix\
+build_property.ProjectDir = C:\Users\User\source\repos\SoftClinix\SoftClinix\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\PC GAMING\Desktop\SoftClinix\SoftClinix
+build_property.MSBuildProjectDirectory = C:\Users\User\source\repos\SoftClinix\SoftClinix
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/App.razor]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/Pages/CategorySelector.razor]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/Pages/CategorySelector.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnlTZWxlY3Rvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/Pages/D_Complement.razor]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/Pages/D_Complement.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRF9Db21wbGVtZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/Pages/Estadopaciente.razor]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/Pages/Estadopaciente.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0YWRvcGFjaWVudGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/Pages/GFamiliar.razor]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/Pages/GFamiliar.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR0ZhbWlsaWFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/Pages/Home.razor]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/Pages/Login.razor]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/Pages/modulo2/Garantia.razor]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/Pages/modulo2/Garantia.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbW9kdWxvMlxHYXJhbnRpYS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/Pages/modulo2/MedicosTratantes.razor]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/Pages/modulo2/MedicosTratantes.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbW9kdWxvMlxNZWRpY29zVHJhdGFudGVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/Pages/modulo2/RegistroDiagnostico.razor]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/Pages/modulo2/RegistroDiagnostico.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbW9kdWxvMlxSZWdpc3Ryb0RpYWdub3N0aWNvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/Pages/modulo2/RegistroHospi.razor]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/Pages/modulo2/RegistroHospi.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbW9kdWxvMlxSZWdpc3Ryb0hvc3BpLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/Pages/RedirectToLogin.razor]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/Pages/RedirectToLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVkaXJlY3RUb0xvZ2luLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/Pages/V_Derechos.razor]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/Pages/V_Derechos.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVl9EZXJlY2hvcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/Pages/Weather.razor]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/_Imports.razor]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/Layout/NavMenu.razor]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-wl1a47qfdq
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/MainLayout.razor]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-ntus7qf5jj
 
-[C:/Users/PC GAMING/Desktop/SoftClinix/SoftClinix/Pages/_Host.cshtml]
+[C:/Users/User/source/repos/SoftClinix/SoftClinix/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

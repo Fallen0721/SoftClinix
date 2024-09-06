@@ -1,6 +1,8 @@
 ﻿@page "/login"
 @inject IJSRuntime JSRuntime
 @inject NavigationManager NavigationManager
+@inject SoftClinix.Data.ApplicationDbContext _context
+@using Microsoft.EntityFrameworkCore
 
 <PageTitle>Iniciar Sesión</PageTitle>
 <div class="modal d-block">
@@ -33,13 +35,17 @@
 
 @code {
     private string user = "", pass = "", mensaje = "none";
-    private string usuarioCorrecto = "admin", contrasenaCorrecta = "12345";
 
     public async Task Acceder()
     {
-        if (user == usuarioCorrecto && pass == contrasenaCorrecta)
+        var usuario = await _context.Users
+            .FirstOrDefaultAsync(u => u.Username == user && u.Password == pass);
+
+        if (usuario != null)
         {
-            mensaje = "none"; user = ""; pass = "";
+            mensaje = "none";
+            user = "";
+            pass = "";
             await JSRuntime.InvokeVoidAsync("localStorage.setItem", "Logueado", "true");
             NavigationManager.NavigateTo("/", true);
         }

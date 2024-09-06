@@ -2,6 +2,11 @@
 @inherits LayoutComponentBase
 @using Microsoft.AspNetCore.Components.Forms
 @using Microsoft.AspNetCore.Components.Web
+@using SoftClinix.Services
+@using SoftClinix.Data
+@inject PacienteService PacienteService
+@inject ApplicationDbContext _context
+@inject NavigationManager NavigationManager
 
 <PageTitle>Datos Complementarios</PageTitle>
 <nav class="navbar navbar-expand-lg navbar-light bg-black">
@@ -23,7 +28,14 @@
     </div>
 </nav>
 
-<form asp-action="Index" method="post" enctype="multipart/form-data">
+
+<EditForm Model="PacienteService.Paciente" OnValidSubmit="GuardarDatos" >
+
+<DataAnnotationsValidator />
+<ValidationSummary />
+
+    <h1>Datos Complementarios</h1>
+
     <div class="container">
         <div class="image-upload-container row">
             <h3>Identificación</h3>
@@ -75,19 +87,19 @@
             <h3 class=" text-muted mb-4">Datos Geográficos</h3>
             <div class="col-4">
                 <label for="direccion">Dirección:</label>
-                <input type="text" id="direccion" class="form-control">
+                <input type="text" id="direccion" class="form-control" @bind="PacienteService.Paciente.Direccion"/>
             </div>
             <div class="col-4">
                 <label for="Departamento">Departamento:</label>
-                <input type="text" id="Departamento" class="form-control">
+                <input type="text" id="Departamento" class="form-control" @bind="PacienteService.Paciente.Departamento"/>
             </div>
             <div class="col-4">
                 <label for="Municipio">Municipio:</label>
-                <input type="text" id="Municipio" class="form-control">
+                <input type="text" id="Municipio" class="form-control" @bind="PacienteService.Paciente.Municipio" />
             </div>
             <div class="col-4">
                 <label for="referencias">Referencias:</label>
-                <input type="text" id="referencias" class="form-control">
+                <input type="text" id="referencias" class="form-control" @bind="PacienteService.Paciente.Referencias" />
             </div>
         </div>
     </div>
@@ -97,23 +109,26 @@
             <h3 class=" text-muted mb-4">Datos Adicionales</h3>
             <div class="col-4">
                 <label for="grupoSanguineo">Grupo Sanguíneo:</label>
-                <CategorySelector />
+                <CategorySelector @bind-Value="PacienteService.Paciente.GrupoSanguineo" />
             </div>
             <div class="col-4">
                 <label for="codigoBarras">Código de Barras:</label>
-                <input type="text" id="codigoBarras" class="form-control">
+                <input type="text" id="codigoBarras" class="form-control" @bind="PacienteService.Paciente.CodigoBarras" />
             </div>
             <div class="col-4">
                 <label for="personasDeReferencias">Personas de Referencias:</label>
-                <input type="text" id="personasDeReferencias" class="form-control">
+                <input type="text" id="personasDeReferencias" class="form-control" @bind="PacienteService.Paciente.PersonaReferencia" />
             </div>
         </div>
     </div>
     <div class="button-container">
-        <a href="/estadopaciente" class="btn btn-primary">Guardar</a>
+        <button class="btn btn-primary" @onclick="GuardarDatos">Guardar</button>
         <a href="/GFamiliar" class="btn btn-secondary">Página anterior</a>
     </div>
-</form>
+</EditForm>
+
+
+
 
 @code {
 
@@ -143,6 +158,22 @@
                 break;
         }
     }
+
+    private async Task GuardarDatos()
+    {
+        try
+        {
+            //_context.RegistroPacientes.Add(PacienteService.Paciente);
+            await PacienteService.AddPacienteAsync(PacienteService.Paciente);
+            NavigationManager.NavigateTo("/");  // Redirige a la página principal después de guardar
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al guardar los datos: {ex.Message}");
+            // Aquí puedes manejar la excepción, por ejemplo, mostrar un mensaje de error en la página
+        }
+    }
+
 }
 
 <style>

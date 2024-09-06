@@ -1,9 +1,13 @@
 ﻿@page "/category-selector"
 @using SoftClinix.Models
-
 @code {
+    [Parameter]
+    public string Value { get; set; }  // Propiedad para el valor actual
+
+    [Parameter]
+    public EventCallback<string> ValueChanged { get; set; }  // Callback para notificar el cambio
+
     private List<Category> categories;
-    private int selectedCategoryId;
 
     protected override void OnInitialized()
     {
@@ -20,16 +24,16 @@
         };
     }
 
-    private void OnCategoryChanged(ChangeEventArgs e)
+    private async Task OnCategoryChanged(ChangeEventArgs e)
     {
-        selectedCategoryId = int.Parse(e.Value.ToString());
-        // Handle the change here, e.g., update other parts of the UI or call a service
+        Value = e.Value.ToString();  // Actualiza la propiedad Value
+        await ValueChanged.InvokeAsync(Value);  // Notifica el cambio a los padres
     }
 }
 
-<select @onchange="OnCategoryChanged" class="form-control">
+<select @onchange="OnCategoryChanged" class="form-control" value="@Value">
     @foreach (var category in categories)
     {
-        <option value="@category.Id">@category.Name</option>
+        <option value="@category.Name">@category.Name</option>  <!-- Usamos el nombre como valor -->
     }
 </select>

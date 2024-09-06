@@ -1,5 +1,7 @@
 ﻿@page "/"
 @using SoftClinix.Layout
+@using SoftClinix.Services
+@inject PacienteService PacienteService
 
 @inherits LayoutComponentBase
 <nav class="navbar navbar-light bg-black">
@@ -27,30 +29,30 @@
             <h3>Datos Personales</h3>
             <div class="col-4">
                 <label>Nombres:</label>
-                <input type="text" @bind="nombres" class="form-control" />
+                <input type="text" @bind="PacienteService.Paciente.Nombres" class="form-control" />
             </div>
             <div class="col-4">
                 <label>Apellidos:</label>
-                <input type="text" @bind="apellidos" class="form-control" />
+                <input type="text" @bind="PacienteService.Paciente.Apellidos" class="form-control" />
             </div>
             <div class="col-4">
                 <label>Sexo:</label>
-                <select @bind="sexo" class="form-control">
+                <select @bind="PacienteService.Paciente.Sexo" class="form-control">
                     <option value="Masculino">Masculino</option>
                     <option value="Femenino">Femenino</option>
                 </select>
             </div>
             <div class="col-4">
                 <label>Fecha de Nacimiento:</label>
-                <input type="date" @bind="fechaNacimiento" class="form-control" />
+                <input type="date" @bind="PacienteService.Paciente.FNacimiento" class="form-control" />
             </div>
             <div class="col-4">
                 <label>Estado Civil:</label>
-                <input type="text" @bind="estadoCivil" class="form-control" />
+                <input type="text" @bind="PacienteService.Paciente.EstadoCivil" class="form-control" />
             </div>
             <div class="col-4">
                 <label>Ocupación:</label>
-                <input type="text" @bind="ocupacion" class="form-control" />
+                <input type="text" @bind="PacienteService.Paciente.Ocupacion" class="form-control" />
             </div>
         </div>
     </div>
@@ -61,23 +63,23 @@
          <h3>Documentación y Contacto</h3>
             <div class="col-4">
                 <label>No. Historia:</label>
-                <input type="text" @bind="noHistoria" class="form-control" />
+                <input type="text" @bind="PacienteService.Paciente.NoHistoria" class="form-control" />
             </div>
             <div class="col-4">
                 <label>Doc. Identidad:</label>
-                <input type="text" @bind="docIdentidad" class="form-control" />
+                <input type="text" @bind="PacienteService.Paciente.DocIdentidad" class="form-control" />
             </div>
             <div class="col-4">
                 <label>Dirección:</label>
-                <input type="text" @bind="direccion" class="form-control" />
+                <input type="text" @bind="PacienteService.Paciente.Direccion" class="form-control" />
             </div>
             <div class="col-4">
                 <label>Teléfonos:</label>
-                <input type="text" @bind="telefonos" class="form-control" />
+                <input type="text" @bind="PacienteService.Paciente.Telefonos" class="form-control" />
             </div>
             <div class="col-4">
                 <label>E-Mail:</label>
-                <input type="email" @bind="email" class="form-control" />
+                <input type="email" @bind="PacienteService.Paciente.Email" class="form-control" />
             </div>
 
         </div>
@@ -89,15 +91,15 @@
             <h3>Información de Salud</h3>
             <div class="col-4">
                 <label>Estado de Historia:</label>
-                <input type="text" @bind="estadoHistoria" class="form-control" />
+                <input type="text" @bind="PacienteService.Paciente.EstadoHistoria" class="form-control" />
             </div>
             <div class="col-4">
                 <label>Plan de Atención:</label>
-                <input type="text" @bind="planAtencion" class="form-control" />
+                <input type="text" @bind="PacienteService.Paciente.PlanAtencion" class="form-control" />
             </div>
             <div class="col-4">
                 <label>Médico:</label>
-                <input type="text" @bind="medico" class="form-control" />
+                <input type="text" @bind="PacienteService.Paciente.Medico" class="form-control" />
             </div>
         </div>
     </div>
