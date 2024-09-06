@@ -11,7 +11,7 @@
                 <a class="nav-link" href="/registro-diagnostico">Registro Diagnostico</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/garantia">Garantia</a>
+                <a class="nav-link active" href="/garantia">Garantia</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/medicos-tratantes">Medicos Tratantes</a>
@@ -25,52 +25,47 @@
     <ValidationSummary />
 
     <fieldset class="container">
-        <legend>Plan de Atención</legend>
-
-        <div class="form-row">
-            <div class="form-group col-md-6">
+        <div class="row">
+            <h3 class="text-muted mb-4">Plan de Atención</h3>
+            <div class="col-4">
                 <label>Plan:</label>
                 <InputText class="form-control" @bind-Value="planAtencionModel.Plan" />
             </div>
-            <div class="form-group col-md-3">
+            <div class="col-4">
                 <label>Coaseguro %:</label>
                 <InputNumber class="form-control" @bind-Value="planAtencionModel.Coaseguro" TValue="decimal" />
             </div>
-            <div class="form-group col-md-3">
+            <div class="col-4">
                 <label>Deducible:</label>
                 <InputNumber class="form-control" @bind-Value="planAtencionModel.Deducible" TValue="decimal" />
             </div>
-        </div>
-
-        <div class="form-row">
-            <div class="form-group col-md-6">
+        
+            <div class="col-4">
                 <label>Moneda:</label>
                 <InputText class="form-control" @bind-Value="planAtencionModel.Moneda" />
             </div>
-            <div class="form-group col-md-6">
+            <div class="col-4">
                 <label>No Contrato:</label>
                 <InputText class="form-control" @bind-Value="planAtencionModel.NoContrato" />
             </div>
-        </div>
 
-        <div class="form-row">
-            <div class="form-group col-md-4">
+            <div class="col-4">
                 <label>Sinestro:</label>
                 <InputText class="form-control" @bind-Value="planAtencionModel.Sinestro" />
             </div>
-            <div class="form-group col-md-4">
+            <div class="col-4">
                 <label>Referencia 1:</label>
                 <InputText class="form-control" @bind-Value="planAtencionModel.Referencia1" />
             </div>
-            <div class="form-group col-md-4">
+            <div class="col-4">
                 <label>Referencia 2:</label>
                 <InputText class="form-control" @bind-Value="planAtencionModel.Referencia2" />
             </div>
         </div>
     </fieldset>
-
-    <fieldset class="container">
-        <legend>Detalles del Plan</legend>
+    <div class="container">
+    <div class="row">
+        <h3 class="text-muted mb-4">Detalles de Plan</h3>
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -109,7 +104,8 @@
                 </tr>
             </tbody>
         </table>
-    </fieldset>
+     </div>
+  </div>
 
     <button type="submit" class="btn btn-primary">Guardar</button>
 </EditForm>

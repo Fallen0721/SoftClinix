@@ -4,11 +4,11 @@
 @inject PacienteService PacienteService
 
 @inherits LayoutComponentBase
-<nav class="navbar  navbar-light bg-black">
+<nav class="navbar navbar-light bg-black">
     <div class="container-fluid">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="/">Registro</a>
+                <a class="nav-link active" href="/">Registro</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/estadopaciente">Paciente Datos</a>
@@ -25,36 +25,32 @@
 <form asp-action="Index" method="post" enctype="multipart/form-data">
 
     <div class="container">
-        <h3>Datos Personales</h3>
-        <div class="form-row">
-            <div class="form-column">
+        <div class="row">
+            <h3>Datos Personales</h3>
+            <div class="col-4">
                 <label>Nombres:</label>
                 <input type="text" @bind="PacienteService.Paciente.Nombres" class="form-control" />
             </div>
-            <div class="form-column">
+            <div class="col-4">
                 <label>Apellidos:</label>
                 <input type="text" @bind="PacienteService.Paciente.Apellidos" class="form-control" />
             </div>
-        </div>
-        <div class="form-row">
-            <div class="form-column">
+            <div class="col-4">
                 <label>Sexo:</label>
                 <select @bind="PacienteService.Paciente.Sexo" class="form-control">
                     <option value="Masculino">Masculino</option>
                     <option value="Femenino">Femenino</option>
                 </select>
             </div>
-            <div class="form-column">
+            <div class="col-4">
                 <label>Fecha de Nacimiento:</label>
                 <input type="date" @bind="PacienteService.Paciente.FNacimiento" class="form-control" />
             </div>
-        </div>
-        <div class="form-row">
-            <div class="form-column">
+            <div class="col-4">
                 <label>Estado Civil:</label>
                 <input type="text" @bind="PacienteService.Paciente.EstadoCivil" class="form-control" />
             </div>
-            <div class="form-column">
+            <div class="col-4">
                 <label>Ocupación:</label>
                 <input type="text" @bind="PacienteService.Paciente.Ocupacion" class="form-control" />
             </div>
@@ -63,59 +59,55 @@
 
 
     <div class="container">
-        <h3>Documentación y Contacto</h3>
-        <div class="form-row">
-            <div class="form-column">
+        <div class="row">
+         <h3>Documentación y Contacto</h3>
+            <div class="col-4">
                 <label>No. Historia:</label>
                 <input type="text" @bind="PacienteService.Paciente.NoHistoria" class="form-control" />
             </div>
-            <div class="form-column">
+            <div class="col-4">
                 <label>Doc. Identidad:</label>
                 <input type="text" @bind="PacienteService.Paciente.DocIdentidad" class="form-control" />
             </div>
-        </div>
-        <div class="form-row">
-            <div class="form-column">
+            <div class="col-4">
                 <label>Dirección:</label>
                 <input type="text" @bind="PacienteService.Paciente.Direccion" class="form-control" />
             </div>
-            <div class="form-column">
+            <div class="col-4">
                 <label>Teléfonos:</label>
                 <input type="text" @bind="PacienteService.Paciente.Telefonos" class="form-control" />
             </div>
-        </div>
-        <div class="form-row">
-            <div class="form-column">
+            <div class="col-4">
                 <label>E-Mail:</label>
                 <input type="email" @bind="PacienteService.Paciente.Email" class="form-control" />
             </div>
+
         </div>
     </div>
 
 
     <div class="container">
-        <h3>Información de Salud</h3>
-        <div class="form-row">
-            <div class="form-column">
+        <div class="row">
+            <h3>Información de Salud</h3>
+            <div class="col-4">
                 <label>Estado de Historia:</label>
                 <input type="text" @bind="PacienteService.Paciente.EstadoHistoria" class="form-control" />
             </div>
-            <div class="form-column">
+            <div class="col-4">
                 <label>Plan de Atención:</label>
                 <input type="text" @bind="PacienteService.Paciente.PlanAtencion" class="form-control" />
             </div>
-            <div class="form-column">
+            <div class="col-4">
                 <label>Médico:</label>
                 <input type="text" @bind="PacienteService.Paciente.Medico" class="form-control" />
             </div>
         </div>
     </div>
-
-    <div class="button-container">
-        <a href="/estadopaciente" class="btn btn-primary">Siguiente Página</a>
-    </div>
-
 </form>
+
+<div class="button-container">
+    <a href="/estadopaciente" class="btn btn-primary">Siguiente Página</a>
+</div>
 
 @code {
     private string nombres;
@@ -146,22 +138,7 @@
         gap: 20px; /* Espacio entre elementos */
     }
 
-    .form-row {
-        display: flex;
-        gap: 15px;
-        justify-content: space-between;
-        margin-bottom: 15px;
-    }
-
-    .form-column {
-        flex: 1;
-    }
-
-    .navbar {
-        position: relative;
-        margin-left: 250px;
-    }
-
+   
     .button-container {
         display: flex;
         justify-content: flex-end; /* Alinea el botón a la derecha */

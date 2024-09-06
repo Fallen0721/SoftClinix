@@ -107,20 +107,31 @@ h1, h2 {
     color: #333;
 }
 
+/*apareiencia de los formularios*/
 .container {
-    background-color: #fff;
+    display:flex;
+    align-items:center;
+    margin: 40px auto;
     padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
+.col-4 {
+    float: left;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/****************************************************** */
 .label, label {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
 }
-
+/*
 input[type="text"], input[type="file"] {
     width: 100%;
     padding: 8px;
@@ -137,17 +148,7 @@ textarea {
     border-radius: 4px;
     height: 100px;
 }
-
-.form-control {
-    width: 100%;
-}
-
-.col-4 {
-    float: left;
-    width: 30%;
-    padding: 0 10px;
-    box-sizing: border-box;
-}
+*/
 
 .row:after, .container:after {
     content: "";
@@ -228,13 +229,16 @@ input[type="file"] {
     cursor: pointer;
 }
 
+/*Estilos para el navegador de las paginas de los modulos*/
+
 .navbar {
     background-color: #343a40;
     border-bottom: 2px solid #007bff;
     padding: 10px 20px;
 }
 
-.navbar-nav {
+.navbar-nav{
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -250,17 +254,20 @@ input[type="file"] {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-    .nav-link:hover {
-        background-color: #007bff;
-        color: #ffffff;
-        border-radius: 5px;
-    }
+ .nav-link:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px;    
+  }
 
-    .nav-link.active {
-        background-color: #007bff;
-        color: #ffffff !important;
-        border-radius: 5px;
-    }
+ .nav-link.active {
+    background-color: #007bff;
+    color: #ffffff !important;
+    border-radius: 10px;
+ }
+
+/*Estilos para el navegador de las paginas de los modulos*/
+
 
 @media (max-width: 768px) {
     .navbar-nav {
@@ -300,4 +307,58 @@ input[type="file"] {
 
 input[type="file"] {
     cursor: pointer;
+}
+
+/* Estilos generales para la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el encabezado de la tabla */
+thead {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    gap: 20px;
+}
+
+/* Estilos para el cuerpo de la tabla */
+tbody {
+    background-color: #fff;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+/* Estilos para las filas de la tabla */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para el borde de la tabla */
+table th, table td {
+    border: 1px solid #ccc;
+}
+
+/* Estilos para los labels */
+label {
+display: block;
+margin-bottom: 10px;
+font-weight:bold;
+color: #333;
 }

@@ -28,16 +28,18 @@
     </div>
 </nav>
 
+
 <EditForm Model="PacienteService.Paciente" OnValidSubmit="GuardarDatos" >
 
 <DataAnnotationsValidator />
 <ValidationSummary />
 
     <h1>Datos Complementarios</h1>
+
     <div class="container">
-        <h2>Identificación</h2>
         <div class="image-upload-container row">
-            <div class="image-upload-field col-6">
+            <h3>Identificación</h3>
+            <div class="image-upload-field col-4">
                 <label class="label" for="foto">Foto:</label>
                 <InputFile id="Foto" OnChange="(e) => OnInputFileChange(e, 1)" />
                 @if (photo != null)
@@ -49,7 +51,7 @@
                     <div class="image-placeholder">Espacio reservado</div>
                 }
             </div>
-            <div class="image-upload-field col-6">
+            <div class="image-upload-field col-4">
                 <label class="label" for="huellaDigital">Huella Digital:</label>
                 <InputFile id="Huella" OnChange="(e) => OnInputFileChange(e, 2)" />
                 @if (huella != null)
@@ -61,7 +63,7 @@
                     <div class="image-placeholder">Espacio reservado</div>
                 }
             </div>
-            <div class="image-upload-field col-6">
+            <div class="image-upload-field col-4">
                 <label class="label" for="firma">Firma:</label>
                 <InputFile id="firma" OnChange="(e) => OnInputFileChange(e, 3)" />
                 @if (sign != null)
@@ -73,7 +75,7 @@
                     <div class="image-placeholder">Espacio reservado</div>
                 }
             </div>
-            <div class="col-6">
+            <div class="col-4">
                 <label class="label" for="Rasgos">Rasgos Físicos:</label>
                 <input type="text" id="Rasgos" class="form-control">
             </div>
@@ -81,21 +83,21 @@
     </div>
 
     <div class="container">
-        <h2>Datos Geográficos</h2>
         <div class="row">
-            <div class="col-6">
+            <h3 class=" text-muted mb-4">Datos Geográficos</h3>
+            <div class="col-4">
                 <label for="direccion">Dirección:</label>
                 <input type="text" id="direccion" class="form-control" @bind="PacienteService.Paciente.Direccion"/>
             </div>
-            <div class="col-6">
+            <div class="col-4">
                 <label for="Departamento">Departamento:</label>
                 <input type="text" id="Departamento" class="form-control" @bind="PacienteService.Paciente.Departamento"/>
             </div>
-            <div class="col-6">
+            <div class="col-4">
                 <label for="Municipio">Municipio:</label>
                 <input type="text" id="Municipio" class="form-control" @bind="PacienteService.Paciente.Municipio" />
             </div>
-            <div class="col-6">
+            <div class="col-4">
                 <label for="referencias">Referencias:</label>
                 <input type="text" id="referencias" class="form-control" @bind="PacienteService.Paciente.Referencias" />
             </div>
@@ -103,17 +105,17 @@
     </div>
 
     <div class="container">
-        <h2>Datos Adicionales</h2>
         <div class="row">
-            <div class="col-6">
+            <h3 class=" text-muted mb-4">Datos Adicionales</h3>
+            <div class="col-4">
                 <label for="grupoSanguineo">Grupo Sanguíneo:</label>
                 <CategorySelector @bind-Value="PacienteService.Paciente.GrupoSanguineo" />
             </div>
-            <div class="col-6">
+            <div class="col-4">
                 <label for="codigoBarras">Código de Barras:</label>
                 <input type="text" id="codigoBarras" class="form-control" @bind="PacienteService.Paciente.CodigoBarras" />
             </div>
-            <div class="col-6">
+            <div class="col-4">
                 <label for="personasDeReferencias">Personas de Referencias:</label>
                 <input type="text" id="personasDeReferencias" class="form-control" @bind="PacienteService.Paciente.PersonaReferencia" />
             </div>
@@ -175,23 +177,6 @@
 }
 
 <style>
-    /* Esto arregla el problema de la barra */
-    /* Ajuste de la barra de navegación */
-    .navbar {
-        position: relative;
-        margin-left: 250px;
-    }
-
-    /* Contenedor principal */
-    .container {
-        max-width: 900px;
-        background-color: #f9f9f9;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin-top: 20px;
-    }
-
     /* Contenedor de imagen y otros elementos */
     .image-upload-container {
         display: flex;

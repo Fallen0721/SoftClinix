@@ -1,11 +1,15 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+
 using Microsoft.EntityFrameworkCore;
-using SoftClinix.Data; // Asegúrate de que este namespace es correcto
+using SoftClinix.Data; // Asegï¿½rate de que este namespace es correcto
 using SoftClinix.Services;
 
+using SoftClinix.Pages.ModuloAdmin;
+
+
 var builder = WebApplication.CreateBuilder(args);
-// Configurar la cadena de conexión
+// Configurar la cadena de conexiï¿½n
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 // Registrar ApplicationDbContext con MySQL
@@ -18,6 +22,7 @@ builder.Services.AddScoped<PacienteService>();
 // Agregar servicios de Razor Pages y Blazor Server
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddSingleton<UserService>();
 
 var app = builder.Build();
 

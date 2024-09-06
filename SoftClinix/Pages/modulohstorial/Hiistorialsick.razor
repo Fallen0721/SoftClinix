@@ -1,0 +1,96 @@
+﻿@page "/historialsick"
+@using System.IO
+
+@code {
+    // Modelo para el historial de consultas
+    public class Consulta
+    {
+        public DateTime Fecha { get; set; }
+        public string Anamnesis { get; set; }
+        public string Enfermedad { get; set; }
+        public string Tratamiento { get; set; }
+    }
+
+    // Modelo para el paciente
+    public class Paciente
+    {
+        public string Codigo { get; set; }
+        public string Nombre { get; set; }
+        public string PrimerApellido { get; set; }
+        public string SegundoApellido { get; set; }
+        public List<Consulta> Consultas { get; set; }
+    }
+
+    private List<Paciente> pacientes = new List<Paciente>
+    {
+        new Paciente
+        {
+            Codigo = "P001",
+            Nombre = "Dionio",
+            PrimerApellido = "Fernandez",
+            SegundoApellido = "De Flores",
+            Consultas = new List<Consulta>
+            {
+                new Consulta { Fecha = new DateTime(2021, 1, 18), Anamnesis = "Hinchazón y picor con prurito, alteración mucosa genital", Enfermedad = "Dermatitis", Tratamiento = "Antihistamínico" },
+                new Consulta { Fecha = new DateTime(2020, 9, 30), Anamnesis = "Refiere dolor palpitante alterno hemisferio intercraneal", Enfermedad = "Migraña", Tratamiento = "Analgesia y reposo" },
+                new Consulta { Fecha = new DateTime(2015, 10, 14), Anamnesis = "En medicina, tratamiento o terapia", Enfermedad = "Desconocida", Tratamiento = "Terapia conductual" }
+            }
+        }
+    };
+
+    private Paciente paciente;
+    private string codigoPaciente;
+
+    private void BuscarPaciente()
+    {
+        paciente = pacientes.FirstOrDefault(p => p.Codigo == codigoPaciente);
+    }
+
+    private void DescargarPDF()
+    {
+       
+        // byte[] archivoPdf = new byte[0];
+        // var stream = new MemoryStream(archivoPdf);
+        // var nombreArchivo = "HistorialClinico.pdf";
+        // stream.Position = 0;
+        // var archivoReferencia = new Microsoft.AspNetCore.Components.Forms.IBrowserFile();
+        // archivoReferencia.OpenReadStream();
+        // var options = new BlazorDownloadFile.Services.DownloadFileOption
+        //     {
+        //         FileName = nombreArchivo,
+        //         MediaType = "application/pdf"
+        //     };
+    }
+}
+
+<h3>Historial Clínico</h3>
+
+<div>
+    <label>Codigo del Paciente:</label>
+    <input type="text" @bind="codigoPaciente" placeholder="Ingrese codigo" class="form-control" />
+    <button @onclick="BuscarPaciente" class="btn btn-primary">Buscar</button>
+</div>
+
+@if (paciente != null)
+{
+    <div>
+        <h4>@paciente.Nombre @paciente.PrimerApellido @paciente.SegundoApellido</h4>
+        <h5>Historial de Consultas</h5>
+        <ul>
+            @foreach (var consulta in paciente.Consultas)
+            {
+                <li>
+                    <b>Fecha:</b> @consulta.Fecha.ToString("dd/MM/yyyy")<br />
+                    <b>Anamnesis:</b> @consulta.Anamnesis<br />
+                    <b>Enfermedad:</b> @consulta.Enfermedad<br />
+                    <b>Tratamiento:</b> @consulta.Tratamiento<br />
+                </li>
+            }
+        </ul>
+        <button @onclick="DescargarPDF" class="btn btn-secondary">Descargar PDF</button>
+    </div>
+}
+else
+{
+    <p>No se encontró información para el código ingresado.</p>
+}

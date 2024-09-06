@@ -1,15 +1,17 @@
 ﻿@page "/estadopaciente"
+
 @using SoftClinix.Services
 @inject PacienteService PacienteService
 
 <nav class="navbar navbar-expand-lg navbar-light bg-black">
+
     <div class="container-fluid">
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" href="/">Registro</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/estadopaciente">Paciente Datos</a>
+                <a class="nav-link active" href="/estadopaciente">Paciente Datos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/gfamiliar">Grupo Familiar</a>
@@ -21,28 +23,26 @@
     </div>
 </nav>  
 
-
-<div class="main-container">
-    <div class="container">
-
-        <h2>Registro de Pacientes</h2>
-        <div id="DatosGenerales" class="tab-content" style="display: block;">
-            <div class="form-group">
+  <div class="container">
+    <div class="row">
+        <h3 class="text-muted mb-4">Registro de Pacientes</h3>
+            <div class="col-4">
                 <label>Fecha Control Inicio:</label>
                 <input type="date" @bind="PacienteService.Paciente.FechaControlInicio" class="form-control" />
             </div>
-            <div class="form-group">
+            <div class="col-4">
                 <label>Fecha Control Fin:</label>
                 <input type="date" @bind="PacienteService.Paciente.FechaControlFinal" class="form-control" />
             </div>
-            <div class="form-group">
+            <div class="col-4">
                 <label>Fecha Baja:</label>
                 <input type="date" @bind="PacienteService.Paciente.FechaBaja" class="form-control" />
             </div>
-            <div class="form-group">
+            <div class="col-4">
                 <label>Documento:</label>
                 <input type="text" @bind="PacienteService.Paciente.Documento" class="form-control" />
             </div>
+
             <div class="form-group">
                 <input type="checkbox" @bind="PacienteService.Paciente.EstadoAntecedentePaciente" />
                 <label for="estado">Antecedentes Paciente</label>
@@ -50,52 +50,32 @@
             <div class="form-group">
                 
                 <input type="checkbox" @bind="PacienteService.Paciente.AptoParaAtencion" />
+
                 <label for="apto">Apto para atención</label>
             </div>
-            <div class="form-group">
+
+            <div class="col-4">
                 <label>Comentarios:</label>
                 <textarea @bind="PacienteService.Paciente.Comentarios" class="form-control" rows="3"></textarea>
             </div>
         </div>
+
         <div class="button-container">
             <a href="/d_complement" class="btn btn-primary">Siguiente página</a>
             <a href="/" class="btn btn-secondary">Página anterior</a>
         </div>
 
-    </div>
 
+    </div>
 </div>
 
+    <div class="button-container">
+        <a href="/GFamiliar" class="btn btn-primary">Siguiente página</a>
+        <a href="/" class="btn btn-secondary">Página anterior</a>
+    </div>
 
 <style>
-    .main-container {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start; /* Ajusta la alineación vertical al principio del contenedor */
-        width: 100%;
-        height: auto;
-        padding-top: 20px; /* Añade espacio en la parte superior */
-    }
 
-    .container {
-        max-width: 900px;
-        background-color: #f9f9f9;
-        padding: 20px;
-        border-radius: 8px;
-        width: 100%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra para destacar el contenedor */
-    }
-
-    .form-group {
-        margin-bottom: 15px;
-        width: 100%;
-        gap: 20px;
-    }
-
-    .navbar {
-        position: relative;
-        margin-left: 250px;
-    }
 
     body {
         padding-top: 60px; /* Ajusta esto según el tamaño de tu navbar */
