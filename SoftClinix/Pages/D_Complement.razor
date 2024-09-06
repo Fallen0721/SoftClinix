@@ -7,6 +7,7 @@
 @inject PacienteService PacienteService
 @inject ApplicationDbContext _context
 @inject NavigationManager NavigationManager
+@using Microsoft.EntityFrameworkCore
 
 <PageTitle>Datos Complementarios</PageTitle>
 <nav class="navbar navbar-expand-lg navbar-light bg-black">
@@ -91,11 +92,26 @@
             </div>
             <div class="col-4">
                 <label for="Departamento">Departamento:</label>
-                <input type="text" id="Departamento" class="form-control" @bind="PacienteService.Paciente.Departamento"/>
+                <select id="Departamento" class="form-control" @onchange="OnDepartamentoChange">
+                    <!-- <input type="text" id="Departamento" class="form-control" @bind="PacienteService.Paciente.Departamento"/>-->
+                    <option value="">Seleccione un Departamento</option>
+                    @foreach (var depa in departamentos)
+                    {
+                        <option value="@depa">@depa</option>
+                    }
+                </select>
             </div>
             <div class="col-4">
                 <label for="Municipio">Municipio:</label>
-                <input type="text" id="Municipio" class="form-control" @bind="PacienteService.Paciente.Municipio" />
+                <!-- <input type="text" id="Municipio" class="form-control" @bind="PacienteService.Paciente.Municipio" />-->
+                <select id="Municipio" class="form-control" @bind="PacienteService.Paciente.Municipio">
+                    <option value="">Seleccione un municipio</option>
+                    @foreach (var muni in municipiosFiltrados)
+                    {
+                        <option value="@muni">@muni</option>
+                    }
+                </select>
+
             </div>
             <div class="col-4">
                 <label for="referencias">Referencias:</label>
@@ -132,9 +148,32 @@
 
 @code {
 
+    private List<string> departamentos = new();
+    private List<string> municipios = new();
+    private List<string> municipiosFiltrados = new();
+    private string departamentoSeleccionado;
+
     private string? photo;
     private string? huella;
     private string? sign;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Obtener los departamentos y municipios desde la base de datos
+        departamentos = await _context.Municipios.Select(m => m.Depa).Distinct().ToListAsync();
+        municipios = await _context.Municipios.Select(m => m.Muni).ToListAsync();
+    }
+
+    private void OnDepartamentoChange(ChangeEventArgs e)
+    {
+        departamentoSeleccionado = e.Value.ToString();
+        // Filtrar los municipios correspondientes al departamento seleccionado
+        municipiosFiltrados = _context.Municipios
+            .Where(m => m.Depa == departamentoSeleccionado)
+            .Select(m => m.Muni)
+            .ToList();
+    }
+
 
     //Mostrar en min Imagenes
     private async Task OnInputFileChange(InputFileChangeEventArgs e, int imageNumber)

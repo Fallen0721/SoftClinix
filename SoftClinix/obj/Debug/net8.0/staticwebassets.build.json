@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gv5qCMoSOVV6BCZYOVVCaU7YS+KjdVstM3hFcqDguok=",
+  "Hash": "QSq2g40AYH5gMh+WeSr2BUGvNyTwuYDe7Sz4ZFSSjbQ=",
   "Source": "SoftClinix",
   "BasePath": "_content/SoftClinix",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "SoftClinix\\wwwroot",
       "Source": "SoftClinix",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\",
       "BasePath": "_content/SoftClinix",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\obj\\Debug\\net8.0\\scopedcss\\bundle\\SoftClinix.styles.css",
+      "Identity": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\obj\\Debug\\net8.0\\scopedcss\\bundle\\SoftClinix.styles.css",
       "SourceId": "SoftClinix",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/SoftClinix",
       "RelativePath": "SoftClinix.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\obj\\Debug\\net8.0\\scopedcss\\bundle\\SoftClinix.styles.css"
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\obj\\Debug\\net8.0\\scopedcss\\bundle\\SoftClinix.styles.css"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SoftClinix.bundle.scp.css",
+      "Identity": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SoftClinix.bundle.scp.css",
       "SourceId": "SoftClinix",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/SoftClinix",
       "RelativePath": "SoftClinix.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SoftClinix.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SoftClinix.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\clinix.jpeg",
+      "Identity": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\clinix.jpeg",
       "SourceId": "SoftClinix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\",
       "BasePath": "_content/SoftClinix",
       "RelativePath": "clinix.jpeg",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\clinix.jpeg"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\css\\app.css",
+      "Identity": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\css\\app.css",
       "SourceId": "SoftClinix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\",
       "BasePath": "_content/SoftClinix",
       "RelativePath": "css/app.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\app.css"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "SoftClinix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\",
       "BasePath": "_content/SoftClinix",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "SoftClinix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\",
       "BasePath": "_content/SoftClinix",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\css\\site.css",
       "SourceId": "SoftClinix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\",
       "BasePath": "_content/SoftClinix",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\favicon.png",
       "SourceId": "SoftClinix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\",
       "BasePath": "_content/SoftClinix",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\icon-192.png",
+      "Identity": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\icon-192.png",
       "SourceId": "SoftClinix",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\",
       "BasePath": "_content/SoftClinix",
       "RelativePath": "icon-192.png",
       "AssetKind": "All",

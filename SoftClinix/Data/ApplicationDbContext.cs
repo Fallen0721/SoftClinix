@@ -13,5 +13,6 @@ namespace SoftClinix.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Paciente> RegistroPacientes { get; set; }
+        public DbSet<Municipio> Municipios { get; set; } // Añadir este DbSet
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SoftClinix")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1b625d5ee1faaa5e2edf249658bf0f06570cf80")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80f6687d55619cc8ae75b38b327450e5b048ba7c")]
 [assembly: System.Reflection.AssemblyProductAttribute("SoftClinix")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SoftClinix")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
