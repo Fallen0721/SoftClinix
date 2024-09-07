@@ -78,6 +78,9 @@
             <div class="col-4">
                 <label>Paquete de Atención:</label>
                 <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.PaqueteAtencion" />
+
+
+
             </div>
             <div class="col-4">
                 <label>Estado:</label>
@@ -132,7 +135,10 @@
             <h4 class="text-muted mb-4">Plan de Atención</h4>
             <div class="col-4">
                 <label>Plan:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Plan" />
+                <InputSelect class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Plan">
+                    <option value="AseguradoDirecto">Asegurado Directo</option>
+                    <option value="Coasegurado">Coaseguradol</option>
+                </InputSelect>
             </div>
             <div class="col-4">
                 <label>Abertura Máxima:</label>
