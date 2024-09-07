@@ -46,10 +46,16 @@
                 <label>Fecha de Nacimiento:</label>
                 <input type="date" @bind="PacienteService.Paciente.FNacimiento" class="form-control" />
             </div>
-            <div class="col-4">
-                <label>Estado Civil:</label>
-                <input type="text" @bind="PacienteService.Paciente.EstadoCivil" class="form-control" />
-            </div>
+            <div class="col-4"> 
+                <label>Estado Civil:</label> 
+                <select @bind="PacienteService.Paciente.EstadoCivil" class="form-control"> 
+                <option value="Soltero(a)">Soltero(a)</option> 
+                <option value="Casado(a)">Casado(a)</option> 
+                <option value="Divorciado">Divorciado(a)</option> 
+                <option value="Union Libre">Union Libre</option> 
+                <option value="Viudo(a)">Viud(a)</option> 
+                </select> 
+            </div
             <div class="col-4">
                 <label>Ocupación:</label>
                 <input type="text" @bind="PacienteService.Paciente.Ocupacion" class="form-control" />
