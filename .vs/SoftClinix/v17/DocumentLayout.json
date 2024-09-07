@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\SoftClinix\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\pc gaming\\desktop\\softclinix\\softclinix\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\user\\source\\repos\\softclinix\\softclinix\\pages\\estadopaciente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\estadopaciente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\user\\source\\repos\\softclinix\\softclinix\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\pc gaming\\desktop\\softclinix\\softclinix\\pages\\d_complement.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\d_complement.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\pc gaming\\desktop\\softclinix\\softclinix\\pages\\gfamiliar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\user\\source\\repos\\softclinix\\softclinix\\pages\\gfamiliar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\gfamiliar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\pc gaming\\desktop\\softclinix\\softclinix\\pages\\estadopaciente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\estadopaciente.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\user\\source\\repos\\softclinix\\softclinix\\pages\\modulo2\\registrohospi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\modulo2\\registrohospi.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|c:\\users\\user\\source\\repos\\softclinix\\softclinix\\pages\\d_complement.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E701B445-DC23-4DA4-A07C-08583D1E7BEC}|SoftClinix\\SoftClinix.csproj|solutionrelative:softclinix\\pages\\d_complement.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,31 +30,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "D_Complement.razor",
-              "DocumentMoniker": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\Pages\\D_Complement.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\D_Complement.razor",
               "RelativeDocumentMoniker": "SoftClinix\\Pages\\D_Complement.razor",
-              "ToolTip": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\Pages\\D_Complement.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\D_Complement.razor",
               "RelativeToolTip": "SoftClinix\\Pages\\D_Complement.razor",
-              "ViewState": "AQIAAHIAAAAAAAAAAAAAAHEAAABAAAAA",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAHEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-17T01:27:37.335Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\Pages\\Home.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "SoftClinix\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\Home.razor",
               "RelativeToolTip": "SoftClinix\\Pages\\Home.razor",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAHcAAAAlAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADkAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-17T00:59:34.578Z",
               "IsPinned": true,
@@ -58,13 +61,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Estadopaciente.razor",
-              "DocumentMoniker": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\Pages\\Estadopaciente.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\Estadopaciente.razor",
               "RelativeDocumentMoniker": "SoftClinix\\Pages\\Estadopaciente.razor",
-              "ToolTip": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\Pages\\Estadopaciente.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\Estadopaciente.razor",
               "RelativeToolTip": "SoftClinix\\Pages\\Estadopaciente.razor",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAADkAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-17T01:27:32.171Z",
               "IsPinned": true,
@@ -74,15 +77,32 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "GFamiliar.razor",
-              "DocumentMoniker": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\Pages\\GFamiliar.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\GFamiliar.razor",
               "RelativeDocumentMoniker": "SoftClinix\\Pages\\GFamiliar.razor",
-              "ToolTip": "C:\\Users\\PC GAMING\\Desktop\\SoftClinix\\SoftClinix\\Pages\\GFamiliar.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\GFamiliar.razor",
               "RelativeToolTip": "SoftClinix\\Pages\\GFamiliar.razor",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAaAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-17T01:27:25.159Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegistroHospi.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\modulo2\\RegistroHospi.razor",
+              "RelativeDocumentMoniker": "SoftClinix\\Pages\\modulo2\\RegistroHospi.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\Pages\\modulo2\\RegistroHospi.razor",
+              "RelativeToolTip": "SoftClinix\\Pages\\modulo2\\RegistroHospi.razor",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACwAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-07T05:11:51.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

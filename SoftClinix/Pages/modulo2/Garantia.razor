@@ -29,7 +29,10 @@
             <h3 class="text-muted mb-4">Plan de Atención</h3>
             <div class="col-4">
                 <label>Plan:</label>
-                <InputText class="form-control" @bind-Value="planAtencionModel.Plan" />
+                <InputSelect class="form-control border-0 border-bottom" @bind-Value="planAtencionModel.Plan">
+                    <option value="AseguradoDirecto">Asegurado Directo</option>
+                    <option value="Coasegurado">Dependiente</option>
+                </InputSelect>
             </div>
             <div class="col-4">
                 <label>Coaseguro %:</label>

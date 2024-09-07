@@ -1,35 +1,35 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SoftClinix.bundle.scp.css",
+      "Id": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SoftClinix.bundle.scp.css",
       "PackagePath": "staticwebassets\\SoftClinix.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\clinix.jpeg",
+      "Id": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\clinix.jpeg",
       "PackagePath": "staticwebassets\\clinix.jpeg"
     },
     {
-      "Id": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\User\\Source\\Repos\\SoftClinix\\SoftClinix\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\User\\source\\repos\\SoftClinix\\SoftClinix\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
