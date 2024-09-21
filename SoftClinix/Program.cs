@@ -8,9 +8,12 @@ using SoftClinix.Services;
 using SoftClinix.Pages.ModuloAdmin;
 
 
+
 var builder = WebApplication.CreateBuilder(args);
 // Configurar la cadena de conexi�n
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+
 
 // Registrar ApplicationDbContext con MySQL
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -18,6 +21,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 // Registrar el servicio PacienteService
 builder.Services.AddScoped<PacienteService>();
+
+//Registro Hospitalizacion
+builder.Services.AddScoped<RegistroPacienteService>();
 
 // Agregar servicios de Razor Pages y Blazor Server
 builder.Services.AddRazorPages();

@@ -1,4 +1,7 @@
 ﻿@page "/registro-paciente"
+@using SoftClinix.Models
+@using SoftClinix.Services
+@inject RegistroPacienteService registroPacienteService
 @using Microsoft.AspNetCore.Components.Forms
 
 <nav class="navbar  navbar-light bg-black">
@@ -20,93 +23,119 @@
     </div>
 </nav>
 
-<EditForm Model="@registroPaciente">
+<EditForm Model="@registroPacienteService.CurrentRegistro">
     <DataAnnotationsValidator />
     <ValidationSummary class="text-danger" />
 
+    <!-- Información del paciente -->
     <div class="container">
         <div class="row">
             <div class="col-4">
                 <label>Secuencia HO:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.SecuenciaHO" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.SecuenciaHO" />
             </div>
             <div class="col-4">
                 <label>No. Historia:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.NoHistoria" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.NoHistoria" />
             </div>
             <div class="col-4">
                 <label>Fecha y Hora Ingreso:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.FechaHoraIngreso" />
+                <InputDate class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.FechaHoraIngreso" TValue="DateTime" />
             </div>
             <div class="col-4">
                 <label>Código de Barras:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.CodigoBarras" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.CodigoBarras" />
             </div>
             <div class="col-4">
                 <label>Procedencia:</label>
-                <InputSelect class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Procedencia" TValue="int">
+                <InputSelect class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.Procedencia" TValue="string">
                     <option value="Ambulancia">Ambulancia</option>
                     <option value="Normal">Normal</option>
                 </InputSelect>
             </div>
         </div>
-      </div>
-        
-     <div class="container">
+    </div>
+
+    <!-- Detalles de Hospitalización -->
+    <div class="container">
         <div class="row">
             <h3 class="text-muted mb-4">Detalles de Hospitalización</h3>
             <div class="col-4">
                 <label>Presupuesto:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Presupuesto" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.Presupuesto" />
             </div>
             <div class="col-4">
                 <label>Paciente:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Paciente" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.Paciente" />
             </div>
             <div class="col-4">
                 <label>Habitación:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Habitacion" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.Habitacion" />
             </div>
             <div class="col-4">
                 <label>Estancia Aprox.:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.EstanciaAprox" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.EstanciaAprox" />
             </div>
             <div class="col-4">
                 <label>Hora de Corte:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.HoraCorte" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.HoraCorte" />
             </div>
             <div class="col-4">
                 <label>Paquete de Atención:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.PaqueteAtencion" />
-
-
-
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.PaqueteAtencion" />
             </div>
             <div class="col-4">
                 <label>Estado:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Estado" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.Estado" />
             </div>
         </div>
     </div>
 
+    <!-- Plan de Atención -->
+    <div class="container">
+        <div class="row">
+            <h4 class="text-muted mb-4">Plan de Atención</h4>
+            <div class="col-4">
+                <label>Plan:</label>
+                <InputSelect class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.Plan" TValue="string">
+                    <option value="AseguradoDirecto">Asegurado Directo</option>
+                    <option value="Coasegurado">Dependiente</option>
+                </InputSelect>
+            </div>
+            <div class="col-4">
+                <label>Abertura Máxima:</label>
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.AberturaMaxima" />
+            </div>
+            <div class="col-4">
+                <label>Coaseguro %:</label>
+                <InputNumber class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.Coaseguro" TValue="decimal" />
+            </div>
+            <div class="col-4">
+                <label>Deducible:</label>
+                <InputNumber class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.Deducible" TValue="decimal" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Datos del Responsable -->
     <div class="container">
         <div class="row">
             <h3 class="text-muted mb-4">Datos del Responsable</h3>
             <div class="col-4">
                 <label>Nombre:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.NombreResponsable" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.NombreResponsable" />
             </div>
             <div class="col-4">
                 <label>Dirección:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.DireccionResponsable" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.DireccionResponsable" />
             </div>
             <div class="col-4">
                 <label>Documento:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.DocumentoResponsable" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.DocumentoResponsable" />
             </div>
             <div class="col-4">
                 <label>Teléfono:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.TelefonoResponsable" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.TelefonoResponsable" />
             </div>
         </div>
     </div>
@@ -117,40 +146,15 @@
             <h3 class="text-muted mb-4">Datos del Aval</h3>
             <div class="col-4">
                 <label>Aval 1:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Aval1" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.Aval1" />
             </div>
             <div class="col-4">
                 <label>Aval 2:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Aval2" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.Aval2" />
             </div>
             <div class="col-4">
                 <label>Aval 3:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Aval3" />
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <h4 class="text-muted mb-4">Plan de Atención</h4>
-            <div class="col-4">
-                <label>Plan:</label>
-                <InputSelect class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Plan">
-                    <option value="AseguradoDirecto">Asegurado Directo</option>
-                    <option value="Coasegurado">Dependiente</option>
-                </InputSelect>
-            </div>
-            <div class="col-4">
-                <label>Abertura Máxima:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.AberturaMaxima" />
-            </div>
-            <div class="col-4">
-                <label>Coaseguro %:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Coaseguro" />
-            </div>
-            <div class="col-4">
-                <label>Deducible:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Deducible" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.Aval3" />
             </div>
         </div>
     </div>
@@ -161,74 +165,47 @@
             <h4 class="text-muted mb-4">Otros Datos</h4>
             <div class="col-4">
                 <label>Documento Asociado:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.DocumentoAsociado" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.DocumentoAsociado" />
             </div>
             <div class="col-4">
                 <label>Siniestro:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Siniestro" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.Siniestro" />
             </div>
             <div class="col-4">
                 <label>Referencia 1:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Referencia1" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.Referencia1" />
             </div>
             <div class="col-4">
                 <label>Referencia 2:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Referencia2" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.Referencia2" />
             </div>
             <div class="col-4">
                 <label>Placa No:</label>
-                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPaciente.PlacaNo" />
+                <InputText class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.PlacaNo" />
             </div>
-           <div class="row">
-                <div class="col-4">
-                    <label>Observaciones:</label>
-                    <InputTextArea class="form-control border-0 border-bottom" @bind-Value="registroPaciente.Observaciones" />
-                </div>
-           </div>
-             
-
+            <div class="col-4">
+                <label>Observaciones:</label>
+                <InputTextArea class="form-control border-0 border-bottom" @bind-Value="registroPacienteService.CurrentRegistro.Observaciones" />
+            </div>
         </div>
     </div>
 
     <div class="d-flex justify-content-center">
-        <button type="submit" class="btn btn-primary btn-lg px-5">Guardar</button>
+        <button type="submit" class="btn btn-primary btn-lg px-5" @onclick="GuardarYContinuar">Guardar</button>
     </div>
 </EditForm>
 
 @code {
-    private RegistroPaciente registroPaciente = new RegistroPaciente();
-
-    public class RegistroPaciente
+    protected override async Task OnInitializedAsync()
     {
-        public string TipoAtencion { get; set; }
-        public string SecuenciaHO { get; set; }
-        public string NoHistoria { get; set; }
-        public string FechaHoraIngreso { get; set; }
-        public string CodigoBarras { get; set; }
-        public int Procedencia { get; set; }  
-        public string Presupuesto { get; set; }
-        public string Paciente { get; set; }
-        public string Habitacion { get; set; }
-        public string EstanciaAprox { get; set; }
-        public string HoraCorte { get; set; }
-        public string PaqueteAtencion { get; set; }
-        public string Estado { get; set; }
-        public string NombreResponsable { get; set; }
-        public string DireccionResponsable { get; set; }
-        public string DocumentoResponsable { get; set; }
-        public string TelefonoResponsable { get; set; }
-        public string Aval1 { get; set; }
-        public string Aval2 { get; set; }
-        public string Aval3 { get; set; }
-        public string Plan { get; set; }
-        public string AberturaMaxima { get; set; }
-        public string Coaseguro { get; set; }
-        public string Deducible { get; set; }
-        public string Observaciones { get; set; }
-        public string DocumentoAsociado { get; set; }
-        public string Siniestro { get; set; }
-        public string Referencia1 { get; set; }
-        public string Referencia2 { get; set; }
-        public string PlacaNo { get; set; }
+        if (registroPacienteService.CurrentRegistro == null)
+        {
+            registroPacienteService.CurrentRegistro = new RegistroPaciente();
+        }
+    }
+
+    private async Task GuardarYContinuar()
+    {
+        await registroPacienteService.SaveRegistroAsync();
     }
 }
